@@ -36,10 +36,9 @@
         "service 5"
     ],
     "social": {
-        "facebook": "#",
-        "instagram": "#",
-        "youtube": "#",
-        "googleMyBusiness": "#",
-        "yell": "#"
+        "facebook": "https://www.facebook.com/demo-company",
+        "instagram": "https://www.instagram.com/democompany",
+        "youtube": "https://www.youtube.com/@DemoCompany",
+        "googleMyBusiness": "https://maps.google.com/?q=Demo+Company"
     }
 }

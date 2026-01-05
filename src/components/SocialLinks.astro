@@ -1,0 +1,35 @@
+---
+import { social } from "../data/config.json";
+
+const socialIcons = {
+  facebook: "facebook",
+  instagram: "instagram",
+  youtube: "youtube",
+  googleMyBusiness: "google",
+};
+
+const links = Object.entries(social || {}).filter(
+  ([_, url]) => url && url !== "#"
+);
+---
+
+{
+  links.length > 0 && (
+    <div class="d-flex align-items-center gap-3">
+      {links.map(([network, url]) => (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visit our ${network}`}
+          class="link-light text-decoration-none"
+        >
+          <i
+            class={`bi bi-${socialIcons[network] ?? network}`}
+            aria-hidden="true"
+          />
+        </a>
+      ))}
+    </div>
+  )
+}
