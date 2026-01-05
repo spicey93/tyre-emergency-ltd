@@ -1,14 +1,9 @@
 ---
 import Topbar from "./Topbar.astro";
-import { company } from "../data/config.json";
-import { Image } from "astro:assets";
-import companyLogo from "../images/logo.svg";
+import Navbar from "./Navbar.astro";
 ---
 
 <header>
     <Topbar />
-    <div class="container py-4">
-
-        <Image src={companyLogo}  width="200" alt={`${company.name} logo`}/>
-    </div>
+    <Navbar />
 </header>
