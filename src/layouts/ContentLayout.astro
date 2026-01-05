@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const { pageTitle } = Astro.props;
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <div class="bg-dark text-light py-5 text-center">
+        <h1>{pageTitle}</h1>
+    </div>
+    <slot/>
+</BaseLayout>
