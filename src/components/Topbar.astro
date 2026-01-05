@@ -5,7 +5,7 @@ import TopbarLink from "./TopbarLink.astro";
 ---
 <div class="bg-dark py-1">
   <div class="container">
-    <TopbarLink href={`tel:${phone.replace(/\s+/g, '')}`} text={phone} icon="telephone-fill" />
-    <TopbarLink href={`mailto:${email}`} text={email} icon="envelope-fill" />
+    <TopbarLink href={`tel:${phone.replace(/\s+/g, '')}`} text={phone} mobileText="Call" icon="telephone-fill" />
+    <TopbarLink href={`mailto:${email}`} text={email} mobileText="Send Email" icon="envelope-fill" />
   </div>
 </div>

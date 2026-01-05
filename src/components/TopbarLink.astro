@@ -1,8 +1,17 @@
 ---
-const { icon, text, href } = Astro.props;
+const { icon, text, mobileText, href } = Astro.props;
 ---
 
-<a class="link-light d-inline-flex align-items-center text-decoration-none" href={href}>
-  {icon && <i class={`bi bi-${icon} me-2 text-primary`} aria-hidden="true"></i>}
-  {text && <span class="me-5">{text}</span>}
+<a
+  class="link-light d-inline-flex align-items-center text-decoration-none"
+  href={href}
+  aria-label={text}
+>
+  {icon && <i class={`bi bi-${icon} me-2 text-primary`} aria-hidden="true" />}
+  {text && <span class="me-5 d-none d-md-inline">{text}</span>}
+  {
+    (mobileText ?? text) && (
+      <span class="me-3 d-inline d-md-none small">{mobileText ?? text}</span>
+    )
+  }
 </a>
