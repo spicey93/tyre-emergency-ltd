@@ -1,10 +1,18 @@
 ---
-import { company } from "../data/config.json";
+import { company, areas, services } from "../data/config.json";
 import { Image } from "astro:assets";
 import companyLogo from "../images/logo.svg";
+
+const slug = (s) => {
+  return String(s)
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w-]/g, "");
+};
 ---
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+<nav class="navbar navbar-expand-lg py-4">
   <div class="container">
     <a class="navbar-brand" href="/">
       <Image src={companyLogo} class="site-logo" alt={`${company.name} logo`} />
@@ -22,6 +30,12 @@ import companyLogo from "../images/logo.svg";
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -33,13 +47,19 @@ import companyLogo from "../images/logo.svg";
             Services
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            {
+              services.map((svc) => (
+                <li>
+                  {" "}
+                  <a class="dropdown-item" href={`/services/${slug(svc)}`}>
+                    {svc}
+                  </a>{" "}
+                </li>
+              ))
+            }
           </ul>
         </li>
-                <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -50,16 +70,18 @@ import companyLogo from "../images/logo.svg";
             Areas
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            {
+              areas.map((area) => (
+                <a class="dropdown-item" href={`/areas/${slug(area)}`}>
+                  {area}
+                </a>
+              ))
+            }
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-        <a href="/get-quote" class="btn btn-primary ms-3">Get Quote</a>
+        <a href="/get-quote" class="btn btn-primary ms-lg-3 mt-2 mt-lg-0"
+          >Get Quote</a
+        >
       </ul>
     </div>
   </div>

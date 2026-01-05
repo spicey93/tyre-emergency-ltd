@@ -24,16 +24,16 @@
         "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officia amet eveniet quod consectetur, ea sit corrupti tenetur quos soluta ullam, odit totam placeat facilis cupiditate labore aperiam dolorum iure!"
     }, 
     "areas": [
-        "area 1",
-        "area 2",
-        "area 3"
+        "Area 1",
+        "Area 2",
+        "Area 3"
     ],
     "services": [
-        "service 1",
-        "service 2",
-        "service 3",
-        "service 4",
-        "service 5"
+        "Service 1",
+        "Service 2",
+        "Service 3",
+        "Service 4",
+        "Service 5"
     ],
     "social": {
         "facebook": "https://www.facebook.com/demo-company",
