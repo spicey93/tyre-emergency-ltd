@@ -10,18 +10,43 @@
             "streetAddress": "Example Road",
             "city": "City",
             "county": "County",
-            "postcode": "DE1 1MO"
+            "postcode": "DE1 1MO",
+            "latitude": 13432,
+            "longitude": 32432
         },
         "openingHours": {
-            "monday": "9AM - 5PM",
-            "tuesday": "9AM - 5PM",
-            "wednesday": "9AM - 5PM",
-            "thursday": "9AM - 5PM",
-            "friday": "9AM - 5PM",
-            "saturday": "9AM - 12PM",
-            "sunday": ""
+            "monday": {
+                "opens": "08:00",
+                "closes": "17:00"
+            },
+            "tuesday": {
+                "opens": "08:00",
+                "closes": "17:00"
+            },
+            "wednesday": {
+                "opens": "08:00",
+                "closes": "17:00"
+            },
+            "thursday": {
+                "opens": "08:00",
+                "closes": "17:00"
+            },
+            "friday": {
+                "opens": "08:00",
+                "closes": "17:00"
+            },
+            "saturday": {
+                "opens": "08:00",
+                "closes": "12:00"
+            },
+            "sunday": {
+                "opens": "00:00",
+                "closes": "17:00"
+            }
+
         },
-        "about": "A brief description about Demo Company and what service they provide."
+        "description": "A brief description about Demo Company and what service they provide.",
+        "website": "https://democompany.co.uk"
     }, 
     "areas": [
         "Area 1",
@@ -40,5 +65,17 @@
         "instagram": "https://www.instagram.com/democompany",
         "youtube": "https://www.youtube.com/@DemoCompany",
         "googleMyBusiness": "https://maps.google.com/?q=Demo+Company"
+    },
+    "pages": {
+        "home": {
+            "pageTitle": "Home",
+            "description": "",
+            "heroHeading": "",
+            "heroSubheading": "",
+            "mainHeading": "",
+            "mainContent":[
+                ""
+            ]
+        }
     }
 }

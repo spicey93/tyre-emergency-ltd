@@ -1,9 +1,9 @@
 ---
 import "../styles/main.css";
-import { company } from "../data/config.json";
-const { pageTitle } = Astro.props;
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { company } from "../data/config.json";
+const { pageTitle, description } = Astro.props;
 ---
 
 <html lang="en">
@@ -12,11 +12,87 @@ import Footer from "../components/Footer.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle} | {company.name}</title>
+    <meta name="description" content={description} />
+
+    <!-- Schema Mark Up - Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": ${company.name},
+        "image": "",
+        "@id": "",
+        "url": `${company.website}`,
+        "telephone": ${company.phone},
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": `${company.address.houseNo} ${company.address.streetAddress}`,
+          "addressLocality": `${company.address.county}`,
+          "postalCode": `${company.address.postcode}`,
+          "addressCountry": "GB"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": company.address.latitude,
+          "longitude": company.address.longitude
+        },
+        "openingHoursSpecification": [
+          // Delete any closed days.
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Monday",
+            "opens": `${company.openingHours.monday.opens}`,
+            "closes": `${company.openingHours.monday.closes}`
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Tuesday",
+            "opens": `${company.openingHours.tuesday.opens}`,
+            "closes": `${company.openingHours.tuesday.closes}`
+          },
+                    {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Wednesday",
+            "opens": `${company.openingHours.wednesday.opens}`,
+            "closes": `${company.openingHours.wednesday.closes}`
+          },
+                    {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": `${company.openingHours.thursday.opens}`,
+            "closes": `${company.openingHours.thursday.closes}`
+          },
+                    {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": `${company.openingHours.friday.opens}`,
+            "closes": `${company.openingHours.friday.closes}`
+          },
+                    {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": `${company.openingHours.saturday.opens}`,
+            "closes": `${company.openingHours.saturday.closes}`
+          },
+                    {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": `${company.openingHours.sunday.opens}`,
+            "closes": `${company.openingHours.sunday.closes}`
+          }
+        ],
+        // Delete any social links that don't exist
+        "sameAs": [
+          `${social.facebook}`,
+          `${social.instagram}`,
+          `${social.youtube}`
+        ]
+      }
+    </script>
   </head>
   <body class="vh-100 d-flex flex-column">
     <Header />
     <slot style="flex: 1" />
-      <h1 class="container">{pageTitle}</h1>
     <Footer />
     <script src="../scripts/bootstrap.min.js"></script>
   </body>

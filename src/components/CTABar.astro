@@ -1,0 +1,14 @@
+---
+import { company } from "../data/config.json";
+---
+
+<div class="bg-primary py-4 text-center text-light fs-5">
+  <span class="container">
+    Call us on <strong
+      ><a href={`tel:${company.phone.replace(/\s+/g, '')}`} class="link-light text-decoration-none">{company.phone}</a></strong
+    > or message us<br class="d-lg-none" />
+    <a href="/get-quote" class="btn btn-dark btn-lg mt-3 mt-lg-0 ms-4"
+      >Get Quote</a
+    >
+  </span>
+</div>
