@@ -1,0 +1,11 @@
+---
+import {company} from "../data/config.json";
+const {phone, email} = company;
+import TopbarLink from "./TopbarLink.astro";
+---
+<div class="bg-dark py-1">
+  <div class="container">
+    <TopbarLink href={`tel:${phone.replace(/\s+/g, '')}`} text={phone} icon="telephone-fill" />
+    <TopbarLink href={`mailto:${email}`} text={email} icon="envelope-fill" />
+  </div>
+</div>

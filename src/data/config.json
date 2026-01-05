@@ -1,0 +1,45 @@
+{
+    "company": {
+        "name": "Demo Company",
+        "phone": "0123 456 7890",
+        "email": "demo.company@email.co.uk",
+        "vatNo": "GB0123456789",
+        "companyNo": "12345678",
+        "address": {
+            "houseNo": "1",
+            "streetAddress": "Example Road",
+            "city": "City",
+            "county": "County",
+            "postcode": "DE1 1MO"
+        },
+        "openingHours": {
+            "monday": "9AM - 5PM",
+            "tuesday": "9AM - 5PM",
+            "wednesday": "9AM - 5PM",
+            "thursday": "9AM - 5PM",
+            "friday": "9AM - 5PM",
+            "saturday": "9AM - 12PM",
+            "sunday": ""
+        },
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officia amet eveniet quod consectetur, ea sit corrupti tenetur quos soluta ullam, odit totam placeat facilis cupiditate labore aperiam dolorum iure!"
+    }, 
+    "areas": [
+        "area 1",
+        "area 2",
+        "area 3"
+    ],
+    "services": [
+        "service 1",
+        "service 2",
+        "service 3",
+        "service 4",
+        "service 5"
+    ],
+    "social": {
+        "facebook": "#",
+        "instagram": "#",
+        "youtube": "#",
+        "googleMyBusiness": "#",
+        "yell": "#"
+    }
+}

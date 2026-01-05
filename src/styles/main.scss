@@ -1,0 +1,17 @@
+// COLOUR VARIABLES
+$primary: #FF4D00;
+// $secondary: #fff;
+// $danger: #fff;
+// $info: #fff;
+// $warning: #fff;
+// $success: #fff;
+
+// IMPORT BOOTSTRAP
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+// CUSTOM FONT
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+body {
+    font-family: 'Readex Pro', sans-serif;
+}
