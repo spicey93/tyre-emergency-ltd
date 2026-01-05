@@ -1,0 +1,70 @@
+---
+import SocialLinks from "../components/SocialLinks.astro";
+import { company } from "../data/config.json";
+
+const { name, phone, email, address, about, vatNo, companyNo } = company;
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-dark text-light mt-auto">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5 class="text-white mb-3">{name}</h5>
+        {about && <p class="small mb-3">{about}</p>}
+        <SocialLinks />
+      </div>
+
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h6 class="text-white mb-3">Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li><a href="/about" class="link-light text-decoration-none">About</a></li>
+          <li><a href="/get-quote" class="link-light text-decoration-none">Get a Quote</a></li>
+          <li><a href="/privacy-policy" class="link-light text-decoration-none">Privacy Policy</a></li>
+          <li><a href="/cookie-policy" class="link-light text-decoration-none">Cookie Policy</a></li>
+          <li><a href="/terms-and-conditions" class="link-light text-decoration-none">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h6 class="text-white mb-3">Contact</h6>
+        <address class="small mb-2">
+          {address.houseNo} {address.streetAddress}<br />
+          {address.city}{address.county ? `, ${address.county}` : ""}<br />
+          {address.postcode}
+        </address>
+        <div class="small">
+          <a href={`tel:${phone.replace(/\s+/g, "")}`} class="link-light text-decoration-none">{phone}</a><br />
+          <a href={`mailto:${email}`} class="link-light text-decoration-none">{email}</a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light opacity-10 my-4" />
+
+    <div class="d-flex flex-column flex-md-row justify-content-between small align-items-center">
+      <div>© {year} {name}. All rights reserved.</div>
+
+      <div class="small mt-2 mt-md-0">
+        VAT: {vatNo} • Company No: {companyNo}
+      </div>
+
+      <div class="mt-2 mt-md-0">
+        <a
+          href="https://tyredigital.co.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-light text-decoration-none d-inline-flex align-items-center"
+          aria-label="Tyre Digital website (opens in a new tab)"
+          title="Tyre Digital — opens in a new tab"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" class="me-2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="7" />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+          <span class="small">Website designed by Tyre Digital</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

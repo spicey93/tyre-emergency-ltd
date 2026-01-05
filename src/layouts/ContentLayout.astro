@@ -4,8 +4,10 @@ const { pageTitle } = Astro.props;
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <div class="bg-dark text-light py-5 text-center">
-        <h1>{pageTitle}</h1>
-    </div>
-    <slot/>
+    <main>
+        <h1 class="text-center bg-light py-3 border">{pageTitle}</h1>
+        <div class="container py-3">
+            <slot />
+        </div>
+    </main>
 </BaseLayout>

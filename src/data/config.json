@@ -3,7 +3,7 @@
         "name": "Demo Company",
         "phone": "0123 456 7890",
         "email": "demo.company@email.co.uk",
-        "vatNo": "GB0123456789",
+        "vatNo": "123456789",
         "companyNo": "12345678",
         "address": {
             "houseNo": "1",
@@ -21,7 +21,7 @@
             "saturday": "9AM - 12PM",
             "sunday": ""
         },
-        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officia amet eveniet quod consectetur, ea sit corrupti tenetur quos soluta ullam, odit totam placeat facilis cupiditate labore aperiam dolorum iure!"
+        "about": "A brief description about Demo Company and what service they provide."
     }, 
     "areas": [
         "Area 1",
