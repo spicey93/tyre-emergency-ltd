@@ -15,8 +15,8 @@ import Footer from "../components/Footer.astro";
   </head>
   <body class="vh-100 d-flex flex-column">
     <Header />
+    <slot style="flex: 1" />
       <h1 class="container">{pageTitle}</h1>
-      <slot style="flex: 1" />
     <Footer />
     <script src="../scripts/bootstrap.min.js"></script>
   </body>
