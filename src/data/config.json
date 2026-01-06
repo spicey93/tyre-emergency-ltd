@@ -60,7 +60,7 @@
       "pageTitle": "Home",
       "description": "Description for the home page",
       "heroHeading": "Hero Heading",
-      "heroSubheading": "This is the subheading for the hero section.",
+      "heroSubheading": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque.",
       "mainHeading": "Home",
       "mainContent": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
@@ -76,6 +76,27 @@
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
       ]
+    },
+    "cookie": {
+        "pageTitle": "",
+        "description": "",
+        "mainContent": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+        ]
+    },
+    "privacy": {
+        "pageTitle": "",
+        "description": "",
+        "mainContent": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+        ]
+    },
+    "terms": {
+        "pageTitle": "",
+        "description": "",
+        "mainContent": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+        ]
     }
   }
 }
