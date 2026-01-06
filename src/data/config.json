@@ -47,21 +47,49 @@
     "description": "A brief description about Demo Company and what service they provide.",
     "website": "https://democompany.co.uk"
   },
-  "areas": [{
-    "name": "Area #1",
-    "localInformation": "Some geographical information about area #1",
-    "nearby": [
-        "Area A",
-        "Area B",
-        "Area C"
-    ],
-    "postcodes": [
-        "AR1",
-        "AR1 A",
-        "AR1 B",
-        "AR1 C"
-    ]
-  }],
+  "areas": [
+    {
+      "name": "London",
+      "localInformation": "London is the capital and largest city of the United Kingdom. Our mobile tyre fitting service covers all of Greater London, providing convenient roadside and on-site tyre services across the city and surrounding areas. We operate throughout London's diverse neighbourhoods, from central London to the outer boroughs.",
+      "nearby": [
+        "Central London",
+        "North London",
+        "South London",
+        "East London",
+        "West London",
+        "Greater London"
+      ],
+      "postcodes": ["SW1A", "EC1A", "W1A", "NW1", "SE1", "E1", "N1", "W1"]
+    },
+    {
+      "name": "Manchester",
+      "localInformation": "Manchester is a major city in the North West of England and a centre of industrial, commercial, financial, and cultural achievement. Our mobile tyre fitting service operates across Greater Manchester, serving the city centre and all surrounding areas. We provide rapid response times for emergency tyre repairs and regular maintenance services.",
+      "nearby": [
+        "City Centre",
+        "Salford",
+        "Stockport",
+        "Oldham",
+        "Rochdale",
+        "Tameside",
+        "Trafford"
+      ],
+      "postcodes": ["M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9"]
+    },
+    {
+      "name": "Birmingham",
+      "localInformation": "Birmingham is the second-largest city in the United Kingdom, located in the heart of England. Our mobile tyre fitting service covers Birmingham and the surrounding West Midlands region, offering comprehensive tyre services including fitting, repairs, and emergency roadside assistance throughout the city.",
+      "nearby": [
+        "City Centre",
+        "Solihull",
+        "Dudley",
+        "Wolverhampton",
+        "Coventry",
+        "Sutton Coldfield",
+        "Sandwell"
+      ],
+      "postcodes": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9"]
+    }
+  ],
   "services": ["Service 1", "Service 2", "Service 3", "Service 4", "Service 5"],
   "social": {
     "facebook": "https://www.facebook.com/demo-company",
@@ -92,23 +120,23 @@
       ]
     },
     "services": [
-        {
-            "mobileTyreFitting": {
-                "pageTitle": "Mobile Tyre Fitting",
-                "description": "Description for the mobile tyre fitting page.",
-                "heroHeading": "Mobile Tyre Fitting",
-                "heroSubheading": "We Come to You at Home, Work, or Roadside",
-                "mainHeading": "Mobile Tyre Fitting",
-                "mainContent": [
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
-                ]
-            },
-            "emergencyMobileTyreFitting": {},
-            "punctureRepair": {},
-            "tyres": {},
-            "batteries": {},
-            "lockingWheelNutRemoval": {}
-        }
+      {
+        "mobileTyreFitting": {
+          "pageTitle": "Mobile Tyre Fitting",
+          "description": "Description for the mobile tyre fitting page.",
+          "heroHeading": "Mobile Tyre Fitting",
+          "heroSubheading": "We Come to You at Home, Work, or Roadside",
+          "mainHeading": "Mobile Tyre Fitting",
+          "mainContent": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+          ]
+        },
+        "emergencyMobileTyreFitting": {},
+        "punctureRepair": {},
+        "tyres": {},
+        "batteries": {},
+        "lockingWheelNutRemoval": {}
+      }
     ],
     "cookie": {
       "pageTitle": "Cookie Policy",

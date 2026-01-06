@@ -1,0 +1,16 @@
+---
+import AreaLayout from "../../layouts/AreaLayout.astro";
+import { areas } from "../../data/config.json";
+import slug from "../../utils/slug";
+
+export function getStaticPaths() {
+  return areas.map((area) => ({
+    params: { area: slug(area.name) },
+    props: { area },
+  }));
+}
+
+const { area } = Astro.props;
+---
+
+<AreaLayout {area} />
