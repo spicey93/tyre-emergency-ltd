@@ -2,14 +2,7 @@
 import { company, areas, services } from "../data/config.json";
 import { Image } from "astro:assets";
 import companyLogo from "../images/logo.svg";
-
-const slug = (s:string) => {
-  return String(s)
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, "-")
-    .replace(/[^\w-]/g, "");
-};
+import slug from "../utils/slug"
 ---
 
 <nav class="navbar navbar-expand-lg py-4 border-bottom">
@@ -73,9 +66,11 @@ const slug = (s:string) => {
           <ul class="dropdown-menu">
             {
               areas.map((area) => (
-                <a class="dropdown-item" href={`/areas/${slug(area)}`}>
-                  {area}
-                </a>
+                <li>
+                  <a class="dropdown-item" href={`/areas/${slug(area.name)}`}>
+                    {area.name}
+                  </a>
+                </li>
               ))
             }
           </ul>

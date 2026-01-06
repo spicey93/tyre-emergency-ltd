@@ -47,7 +47,21 @@
     "description": "A brief description about Demo Company and what service they provide.",
     "website": "https://democompany.co.uk"
   },
-  "areas": ["Area 1", "Area 2", "Area 3"],
+  "areas": [{
+    "name": "Area #1",
+    "localInformation": "Some geographical information about area #1",
+    "nearby": [
+        "Area A",
+        "Area B",
+        "Area C"
+    ],
+    "postcodes": [
+        "AR1",
+        "AR1 A",
+        "AR1 B",
+        "AR1 C"
+    ]
+  }],
   "services": ["Service 1", "Service 2", "Service 3", "Service 4", "Service 5"],
   "social": {
     "facebook": "https://www.facebook.com/demo-company",
