@@ -88,7 +88,12 @@
                 "mainContent": [
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
                 ]
-            }
+            },
+            "emergencyMobileTyreFitting": {},
+            "punctureRepair": {},
+            "tyres": {},
+            "batteries": {},
+            "lockingWheelNutRemoval": {}
         }
     ],
     "cookie": {
@@ -124,5 +129,8 @@
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
       ]
     }
+  },
+  "elfsight": {
+    "form": "0b7f1d60-6803-4756-961f-25e4a39de188"
   }
 }
