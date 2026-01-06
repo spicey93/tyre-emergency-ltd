@@ -1,7 +1,28 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle = "Get Quote"
+import ContactForm from "../components/ContactForm.astro";
+import ContactInfo from "../components/ContactInfo.astro";
+import Title from "../components/Title.astro";
+import { company } from "../data/config.json";
+const { phone, email, address } = company;
+const pageTitle = "Get Quote";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+    <main>
+      <Title title={pageTitle} />
+      <div class="container">
+
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <ContactInfo icon="map-fill" title="Find Us" text=`${address.houseNo} ${address.streetAddress}, ${address.city}, ${address.county} ${address.postcode}` />
+              <ContactInfo icon="telephone-fill" title="Phone" text={phone} />
+              <ContactInfo icon="envelope-fill" title="Email" text={email} />
+            </div>
+            <div class="col-lg-6">
+              <ContactForm />
+            </div>
+          </div>
+      </div>
+  </main>
 </BaseLayout>

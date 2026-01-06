@@ -1,0 +1,12 @@
+---
+const {icon, title, text} = Astro.props;
+---
+
+<div class="d-flex align-items-center mb-3">
+    <i class=`bi bi-${icon} p-3 bg-primary rounded-3 text-light`></i>
+    <div class="ms-3">
+        <p class="h5 mb-0">{title}</p>
+        <p class="mb-0 text-muted">{text}</p>
+    </div>
+</div>
+

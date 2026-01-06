@@ -2,20 +2,26 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import FeatureBar from "../components/FeatureBar.astro";
+import { pages } from "../data/config.json";
+const { home } = pages;
+const {
+  pageTitle,
+  description,
+  heroHeading,
+  heroSubheading,
+  mainHeading,
+  mainContent,
+} = home;
 ---
 
-<BaseLayout pageTitle="Home">
+<BaseLayout pageTitle={pageTitle} description={description}>
   <Hero
-    heading="Demo Company"
-    subheading="This is the subheading of the home page for Demo Company."
+    heading={heroHeading}
+    subheading={heroSubheading}
   />
-
-  <main class="container py-5">
-    <h1>Home</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed
-      quaerat est? Sapiente, quod cum magni non numquam consequatur voluptate,
-      sit natus incidunt maiores, earum nostrum repellat laboriosam odit dicta!
-    </p>
+  <main class="container mt-5">
+    <h1>{mainHeading}</h1>
+    {mainContent.map((cont) => <p>{cont}</p>)}
   </main>
+  
 </BaseLayout>
