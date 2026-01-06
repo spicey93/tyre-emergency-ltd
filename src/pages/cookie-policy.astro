@@ -1,12 +1,12 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle = "Cookie Policy"
-const description = "Cookie policy page"
+import TextLayout from "../layouts/TextLayout.astro";
+import { pages } from "../data/config.json";
+const { cookie } = pages;
+const { pageTitle, description, mainContent } = cookie;
 ---
 
-<BaseLayout pageTitle={pageTitle} description={description}>
-    <main class="container py-5">
-        <h1 class="mb-3">{pageTitle}</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ea enim earum voluptatum. Libero voluptatem modi recusandae nam maxime commodi deserunt, vero illum perspiciatis, placeat optio quibusdam tempore tenetur provident.</p>
-    </main>
-</BaseLayout>
+<TextLayout
+  pageTitle={pageTitle}
+  description={description}
+  mainContent={mainContent}
+/>

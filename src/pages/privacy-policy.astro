@@ -1,7 +1,12 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle = "Privacy Policy"
+import TextLayout from "../layouts/TextLayout.astro";
+import { pages } from "../data/config.json";
+const { privacy } = pages;
+const { pageTitle, description, mainContent } = privacy;
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-</BaseLayout>
+<TextLayout
+  pageTitle={pageTitle}
+  description={description}
+  mainContent={mainContent}
+/>
