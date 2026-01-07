@@ -90,7 +90,6 @@
       "postcodes": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9"]
     }
   ],
-  "services": ["Service 1", "Service 2", "Service 3", "Service 4", "Service 5"],
   "social": {
     "facebook": "https://www.facebook.com/demo-company",
     "instagram": "https://www.instagram.com/democompany",
@@ -122,6 +121,7 @@
     "services": [
       {
         "mobileTyreFitting": {
+          "isProvided": true,
           "pageTitle": "Mobile Tyre Fitting",
           "description": "Description for the mobile tyre fitting page.",
           "heroHeading": "Mobile Tyre Fitting",
@@ -131,11 +131,28 @@
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
           ]
         },
-        "emergencyMobileTyreFitting": {},
-        "punctureRepair": {},
-        "tyres": {},
-        "batteries": {},
-        "lockingWheelNutRemoval": {}
+        "emergencyMobileTyreFitting": {
+           "isProvided": true,
+          "pageTitle": "Emergency Mobile Tyre Fitting",
+          "description": "Description for the emergency mobile tyre fitting page.",
+          "heroHeading": "Emergency Mobile Tyre Fitting",
+          "heroSubheading": "We Come to You at Home, Work, or Roadside",
+          "mainHeading": "Emergency Mobile Tyre Fitting",
+          "mainContent": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+          ]
+        },
+        "punctureRepair": {
+           "isProvided": true,
+          "pageTitle": "Puncture Repair",
+          "description": "Description for the puncture repair page.",
+          "heroHeading": "Puncture Repair",
+          "heroSubheading": "Flat Tyre? We'll Fix It!",
+          "mainHeading": "Puncture Repair",
+          "mainContent": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+          ]
+        }
       }
     ],
     "cookie": {

@@ -1,0 +1,36 @@
+---
+import ServiceLayout from "../../layouts/ServiceLayout.astro";
+import { pages } from "../../data/config.json";
+import slug from "../../utils/slug";
+
+export function getStaticPaths() {
+  const serviceGroups = Array.isArray(pages.services) ? pages.services : [];
+  const allServices = serviceGroups.flatMap((group) => Object.values(group));
+
+  return allServices
+    .filter((s) => s.isProvided)
+    .map((service) => ({
+      params: { service: slug(service.pageTitle) },
+      props: { service },
+    }));
+}
+
+const { service } = Astro.props;
+const {
+  pageTitle,
+  description,
+  heroHeading,
+  heroSubheading,
+  mainHeading,
+  mainContent,
+} = service;
+---
+
+<ServiceLayout
+  pageTitle={pageTitle}
+  description={description}
+  heroHeading={heroHeading}
+  heroSubheading={heroSubheading}
+  mainHeading={mainHeading}
+  mainContent={mainContent}
+/>

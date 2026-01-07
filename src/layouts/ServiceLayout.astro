@@ -1,0 +1,22 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+const {
+  pageTitle,
+  description,
+  heroHeading,
+  heroSubheading,
+  mainHeading,
+  mainContent = [],
+} = Astro.props;
+---
+
+<BaseLayout pageTitle={pageTitle} description={description}>
+  <Hero heading={heroHeading} subheading={heroSubheading} />
+  <main>
+    <div class="container my-5">
+      <h1 class="mb-4">{mainHeading}</h1>
+      {mainContent.map((cont) => <p class="mb-3">{cont}</p>)}
+    </div>
+  </main>
+</BaseLayout>
