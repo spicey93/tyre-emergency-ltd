@@ -16,32 +16,32 @@
     },
     "openingHours": {
       "monday": {
-        "opens": "08:00",
+        "opens": "09:00",
         "closes": "17:00"
       },
       "tuesday": {
-        "opens": "08:00",
+        "opens": "09:00",
         "closes": "17:00"
       },
       "wednesday": {
-        "opens": "08:00",
+        "opens": "09:00",
         "closes": "17:00"
       },
       "thursday": {
-        "opens": "08:00",
+        "opens": "09:00",
         "closes": "17:00"
       },
       "friday": {
-        "opens": "08:00",
+        "opens": "09:00",
         "closes": "17:00"
       },
       "saturday": {
-        "opens": "08:00",
-        "closes": "12:00"
+        "opens": "09:00",
+        "closes": "13:00"
       },
       "sunday": {
         "opens": "00:00",
-        "closes": "17:00"
+        "closes": "00:00"
       }
     },
     "description": "A brief description about Demo Company and what service they provide.",

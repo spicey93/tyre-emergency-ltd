@@ -4,9 +4,13 @@ import ElfsightWidget from "../components/ElfsightWidget.astro";
 import ContactInfo from "../components/ContactInfo.astro";
 import Title from "../components/Title.astro";
 import { company, elfsight } from "../data/config.json";
-const { phone, email, address } = company;
+import { groupOpeningHours } from "../utils/openingHours";
+
+const { phone, email, address, openingHours } = company;
 const { form } = elfsight;
 const pageTitle = "Get Quote";
+
+const groupedHours = groupOpeningHours(openingHours);
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -22,6 +26,22 @@ const pageTitle = "Get Quote";
           />
           <ContactInfo icon="telephone-fill" title="Phone" text={phone} />
           <ContactInfo icon="envelope-fill" title="Email" text={email} />
+          <ContactInfo icon="clock-fill" title="Opening Hours">
+              {groupedHours.map(group => (
+                <div class={`row text-muted ${group.isClosed ? 'closed' : 'open'}`}>
+                  <div class="col-6">
+                    {group.days.length === 1 
+                      ? group.days[0]
+                      : group.days.length === 2
+                      ? group.days.join(' & ')
+                      : `${group.days[0]} - ${group.days[group.days.length - 1]}`}
+                  </div>
+                  <div class="col-6">
+                    {group.isClosed ? 'Closed' : `${group.opens} - ${group.closes}`}
+                  </div>
+                </div>
+              ))}
+          </ContactInfo>
         </div>
         <div class="col-lg-6">
           <ElfsightWidget type={form} />
