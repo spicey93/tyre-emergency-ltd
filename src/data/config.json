@@ -48,6 +48,13 @@
     "description": "A brief description about Demo Company and what service they provide.",
     "website": "https://democompany.co.uk"
   },
+  "marketing": {
+    "features": [
+      { "text": "Feature #1", "icon": "check-circle-fill" },
+      { "text": "Feature #2", "icon": "check-circle-fill" },
+      { "text": "Feature #3", "icon": "check-circle-fill" }
+    ]
+  },
   "areas": [
     {
       "name": "London",
@@ -133,7 +140,7 @@
           ]
         },
         "emergencyMobileTyreFitting": {
-           "isProvided": true,
+          "isProvided": true,
           "pageTitle": "Emergency Mobile Tyre Fitting",
           "description": "Description for the emergency mobile tyre fitting page.",
           "heroHeading": "Emergency Mobile Tyre Fitting",
@@ -144,7 +151,7 @@
           ]
         },
         "punctureRepair": {
-           "isProvided": true,
+          "isProvided": true,
           "pageTitle": "Puncture Repair",
           "description": "Description for the puncture repair page.",
           "heroHeading": "Puncture Repair",

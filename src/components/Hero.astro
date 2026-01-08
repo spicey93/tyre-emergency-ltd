@@ -1,12 +1,13 @@
 ---
 import GoogleBadge from "./GoogleBadge.astro";
+import FeatureBar from "./FeatureBar.astro";
 const {
   heading = "Main Heading",
   subheading = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 } = Astro.props;
 ---
 
-<div id="hero" class="d-flex align-items-center text-center text-lg-start mb-5">
+<div id="hero" class="d-flex align-items-center text-center text-lg-start">
   <div class="container text-light">
     <div class="row">
       <div class="col-lg-6">
@@ -17,7 +18,7 @@ const {
           {subheading}
         </p>
         <div class="d-grid d-lg-block">
-          <a href="/get-quote" class="btn btn-primary btn-lg text-light"
+          <a href="/get-quote" class="btn btn-secondary btn-lg fw-bold"
             >Get Quote</a
           >
         </div>
@@ -27,6 +28,7 @@ const {
     </div>
   </div>
 </div>
+<FeatureBar />
 
 <style>
   #hero {

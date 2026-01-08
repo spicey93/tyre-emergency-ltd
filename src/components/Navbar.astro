@@ -12,7 +12,7 @@ const navServices = serviceGroups
   .map((s) => ({ title: s.pageTitle, href: `/services/${slug(s.pageTitle)}` }));
 ---
 
-<nav class="navbar navbar-expand-lg py-4 border-bottom">
+<nav class="navbar navbar-expand-lg py-4">
   <div class="container">
     <a class="navbar-brand" href="/">
       <Image src={companyLogo} class="site-logo" alt={`${company.name} logo`} />
