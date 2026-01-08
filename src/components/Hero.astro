@@ -1,22 +1,38 @@
 ---
-const {heading = "Main Heading", subheading = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."} = Astro.props;
+import GoogleBadge from "./GoogleBadge.astro";
+const {
+  heading = "Main Heading",
+  subheading = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+} = Astro.props;
 ---
 
-<section class="bg-light border-bottom mb-5">
-    <div class="container d-flex text-light flex-column justify-content-center align-items-start h-100">
-            <p class="display-3 fw-bold w-100"><span class="w-50 d-none d-lg-block">{heading}</span><span class="d-lg-none">{heading}</span></p>
-            <p class="lead mb-4 w-100"><span class="w-50 d-none d-lg-block">{subheading}</span><span class="d-lg-none">{subheading}</span></p>
-            <a href="/get-quote" class="btn btn-primary btn-lg text-light">Get Quote</a>
+<div id="hero" class="d-flex align-items-center text-center text-lg-start mb-5">
+  <div class="container text-light">
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="display-3 fw-bold">
+          {heading}
+        </p>
+        <p class="lead mb-4">
+          {subheading}
+        </p>
+        <div class="d-grid d-lg-block">
+          <a href="/get-quote" class="btn btn-primary btn-lg text-light"
+            >Get Quote</a
+          >
         </div>
+        <GoogleBadge quantity="500" />
+      </div>
+      <div class="col-lg-6"></div>
     </div>
-</section>
+  </div>
+</div>
 
 <style>
-    section {
-        min-height: 70vh;
-        background-image: url("../images/hero.jpg");
-        background-size: cover;
-        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
-    }
-
+  #hero {
+    min-height: 70vh;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+  }
 </style>

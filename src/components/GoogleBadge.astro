@@ -1,0 +1,16 @@
+---
+import {google} from "../data/config.json"
+const {rating, noOfReviews} = google;
+const starCount = Math.max(0, Math.floor(Number(rating) || 0));
+---
+
+<div class="border-light border text-center p-2 px-3 rounded mt-4 d-inline-block">
+  Rated
+  <span class="text-warning" aria-hidden="true">
+    {Array.from({ length: starCount }).map((_, i) => (
+      <i class="bi bi-star-fill"></i>
+    ))}
+  </span>
+  {noOfReviews} reviews on Google
+  <span class="visually-hidden">Rated {starCount} stars</span>
+</div>
