@@ -150,6 +150,28 @@
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
           ]
         },
+        "wheelBalancing": {
+          "isProvided": true,
+          "pageTitle": "Wheel Balancing",
+          "description": "",
+          "heroHeading": "Wheel Balancing",
+          "heroSubheading": "Wheel Balancing",
+          "mainHeading": "Wheel Balancing",
+          "mainContent": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+          ]
+        },
+        "lockingWheelNutRemoval": {
+          "isProvided": true,
+          "pageTitle": "Locking Wheel Nut Removal",
+          "description": "",
+          "heroHeading": "Locking Wheel Nut Removal",
+          "heroSubheading": "Locking Wheel Nut Removal",
+          "mainHeading": "Locking Wheel Nut Removal",
+          "mainContent": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+          ]
+        },
         "punctureRepair": {
           "isProvided": true,
           "pageTitle": "Puncture Repair",
@@ -157,6 +179,39 @@
           "heroHeading": "Puncture Repair",
           "heroSubheading": "Flat Tyre? We'll Fix It!",
           "mainHeading": "Puncture Repair",
+          "mainContent": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+          ]
+        },
+        "mobileCarBatteryReplacement": {
+          "isProvided": true,
+          "pageTitle": "Mobile Car Battery Replacement",
+          "description": "",
+          "heroHeading": "Mobile Car Battery Replacement",
+          "heroSubheading": "Mobile Car Battery Replacement",
+          "mainHeading": "Mobile Car Battery Replacement",
+          "mainContent": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+          ]
+        },
+        "mobileCaravanTyreFitting": {
+          "isProvided": true,
+          "pageTitle": "Mobile Caravan Tyre Fitting",
+          "description": "",
+          "heroHeading": "Mobile Caravan Tyre Fitting",
+          "heroSubheading": "Mobile Caravan Tyre Fitting",
+          "mainHeading": "Mobile Caravan Tyre Fitting",
+          "mainContent": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+          ]
+        },
+        "tpms": {
+          "isProvided": true,
+          "pageTitle": "TPMS",
+          "description": "",
+          "heroHeading": "TPMS",
+          "heroSubheading": "TPMS",
+          "mainHeading": "TPMS",
           "mainContent": [
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
           ]
