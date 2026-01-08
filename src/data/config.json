@@ -107,14 +107,14 @@
   "pages": {
     "home": {
       "pageTitle": "Home",
-      "description": "Description for the home page",
-      "heroHeading": "Hero Heading",
-      "heroSubheading": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque.",
-      "mainHeading": "Home",
+      "description": "Professional mobile tyre fitting service that comes to you. Expert technicians, quality tyres, and hassle-free service at your home, workplace, or roadside. Book today!",
+      "heroHeading": "Mobile Tyre Fitting That Comes to You",
+      "heroSubheading": "No more garage visits! Expert tyre fitting at your home, work, or roadside. Same-day service available with competitive prices and quality tyres.",
+      "mainHeading": "Your Mobile Tyre Fitting Experts",
       "mainContent": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+        "Why waste your day at a garage? We bring professional tyre fitting directly to you - whether that's your home, workplace, or even the roadside if you're stuck. Our fully equipped mobile units and expert technicians provide the same high-quality service you'd expect from a traditional garage, but with the added convenience of coming to your location.",
+        "We offer a complete range of tyre services including new tyre fitting, puncture repairs, wheel balancing, TPMS servicing, and emergency call-outs. With competitive pricing, same-day appointments when available, and a huge selection of premium and budget tyres, we make it easy to keep your vehicle safe and roadworthy without disrupting your schedule.",
+        "All our technicians are fully trained, insured, and equipped with professional-grade tools to ensure every job is done right. We pride ourselves on honest advice, transparent pricing, and friendly service. From cars to caravans, we've got you covered. Ready to experience the convenience of mobile tyre fitting? Get in touch for a free quote today!"
       ]
     },
     "about": {
@@ -131,89 +131,113 @@
         "mobileTyreFitting": {
           "isProvided": true,
           "pageTitle": "Mobile Tyre Fitting",
-          "description": "Description for the mobile tyre fitting page.",
+          "description": "We bring the garage to you! Expert mobile tyre fitting at your home, workplace, or roadside. No queues, no waiting - just great service at your convenience.",
           "heroHeading": "Mobile Tyre Fitting",
           "heroSubheading": "We Come to You at Home, Work, or Roadside",
           "mainHeading": "Mobile Tyre Fitting",
           "mainContent": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+            "Forget the hassle of driving to a garage. We bring the tyre fitting service straight to you! Whether you're at home, work, or even stuck on the roadside, our fully equipped vans and friendly technicians arrive ready to fit your new tyres quickly and professionally.",
+            "We've got tyres for every vehicle and every budget. From premium brands to great value options, all fitted with care and precision. Every service includes tyre fitting, wheel balancing, TPMS reset, and we'll take away your old tyres too - it's all part of the package.",
+            "No more wasting time in garage waiting rooms or rearranging your day. Just pick a time that works for you, and we'll be there. Our vans carry professional equipment so your tyres are fitted to the same high standards as any garage, but with the convenience of doing it at your location.",
+            "Safety is our priority, which is why all our fitters are fully trained and insured. We're upfront about pricing with free quotes, and we offer same-day service when you need it. Ready to book? Get in touch and let's get you sorted."
           ]
         },
         "emergencyMobileTyreFitting": {
           "isProvided": true,
           "pageTitle": "Emergency Mobile Tyre Fitting",
-          "description": "Description for the emergency mobile tyre fitting page.",
+          "description": "Stuck with a flat tyre? We're here to help 24/7! Fast emergency mobile tyre fitting service gets you back on the road quickly and safely.",
           "heroHeading": "Emergency Mobile Tyre Fitting",
           "heroSubheading": "We Come to You at Home, Work, or Roadside",
           "mainHeading": "Emergency Mobile Tyre Fitting",
           "mainContent": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+            "Broken down with a flat tyre? Don't panic - we're here to help! Tyre emergencies always seem to happen at the worst times, but our rapid response team is ready to get you moving again. Available 24/7 because we know disasters don't wait for business hours.",
+            "Whether you've had a blowout on the motorway, spotted a worrying bulge, or just need an urgent replacement, we'll reach you fast. Our vans are fully stocked with tyres to fit most vehicles, so chances are we can sort you out on the spot.",
+            "Every emergency call-out includes professional fitting, wheel balancing, and a thorough safety check. Can't find your exact tyre? No problem - we'll fit a safe temporary solution and get your preferred tyre delivered quickly.",
+            "Never risk driving on a damaged tyre. Our experienced fitters handle emergencies every day and know exactly how to get you back on the road safely. Fair pricing even for emergencies, and we take all major payment methods. Give us a call right now and we'll be on our way."
           ]
         },
         "wheelBalancing": {
           "isProvided": true,
           "pageTitle": "Wheel Balancing",
-          "description": "",
+          "description": "Feel vibrations when driving? Your wheels might need balancing! We bring professional wheel balancing equipment to you for a smoother, safer ride.",
           "heroHeading": "Wheel Balancing",
-          "heroSubheading": "Wheel Balancing",
+          "heroSubheading": "Professional Mobile Wheel Balancing at Your Location",
           "mainHeading": "Wheel Balancing",
           "mainContent": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+            "Nobody likes a shaky ride! Properly balanced wheels mean smoother driving, longer-lasting tyres, and less wear on your car's suspension. We bring professional-grade digital balancing equipment straight to your door, so you can skip the garage visit.",
+            "How do you know if your wheels need balancing? Look out for steering wheel vibrations at certain speeds, uneven wear on your tyres, or just a general rough feeling when you're driving. These are all signs your wheels need attention.",
+            "We usually balance wheels when fitting new tyres, but we're happy to balance your existing tyres too. The process is simple - we measure how the weight is distributed around your wheel, then add small weights in just the right spots to make everything perfectly balanced.",
+            "Our technicians are fully qualified and use calibrated equipment for spot-on results. Whether you've got standard steel wheels, fancy alloys, or even run-flat tyres, we'll get them balanced perfectly. Book now and feel the difference on your next drive!"
           ]
         },
         "lockingWheelNutRemoval": {
           "isProvided": true,
           "pageTitle": "Locking Wheel Nut Removal",
-          "description": "",
+          "description": "Lost your locking wheel nut key? Don't worry! We safely remove stuck, damaged or lost locking wheel nuts without damaging your wheels. Problem solved!",
           "heroHeading": "Locking Wheel Nut Removal",
-          "heroSubheading": "Locking Wheel Nut Removal",
+          "heroSubheading": "Lost Your Key? We Can Help Remove Locking Wheel Nuts",
           "mainHeading": "Locking Wheel Nut Removal",
           "mainContent": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+            "Lost your locking wheel nut key? You're not alone - it happens to lots of people! But it's frustrating when you need a tyre change or service and can't get the wheels off. Good news: we specialise in safely removing stuck, rounded, or keyless locking wheel nuts without harming your precious alloy wheels.",
+            "Using professional extraction tools and years of experience, we can remove locking wheel nuts even when the key is lost, damaged, or just won't fit properly. We've dealt with thousands of these situations on all kinds of vehicles - from everyday cars to high-end performance models.",
+            "We work carefully to protect your wheels while removing the stubborn nuts. In most cases, we can sort it out on the spot and fit new locking wheel nuts with fresh keys, so you won't have this headache again.",
+            "Don't let a missing key stop you from getting the tyre work you need. We come to you, offer same-day service when possible, and keep our prices fair. Get in touch for a quote and let's get this sorted for you."
           ]
         },
         "punctureRepair": {
           "isProvided": true,
           "pageTitle": "Puncture Repair",
-          "description": "Description for the puncture repair page.",
+          "description": "Got a puncture? Don't buy a new tyre just yet! Our mobile puncture repair service can fix most punctures quickly and save you money.",
           "heroHeading": "Puncture Repair",
           "heroSubheading": "Flat Tyre? We'll Fix It!",
           "mainHeading": "Puncture Repair",
           "mainContent": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+            "Picked up a puncture? Before you rush out to buy a new tyre, let us take a look. Most punctures can be repaired quickly and safely, saving you a bundle of money. We come to your home, workplace, or roadside to fix it on the spot using proper industry-approved methods.",
+            "We take safety seriously, so we thoroughly check every puncture first. If it's in the tread area and under 6mm wide, we can repair it using professional plug and patch kits. These repairs are permanent, come with our quality guarantee, and are a brilliant money-saving alternative to buying a new tyre.",
+            "Being honest with you, not every puncture can be safely repaired. Damage to the sidewall, shoulder, or anything bigger than 6mm means you'll need a replacement for safety. We'll always give you straight advice about what's safe and what's not.",
+            "Why bother with the garage when we can come to you? We arrive fully equipped to fix your puncture, re-inflate your tyre, and check the pressure. Fast response times mean you'll be back on the road before you know it. Book your repair today!"
           ]
         },
         "mobileCarBatteryReplacement": {
           "isProvided": true,
           "pageTitle": "Mobile Car Battery Replacement",
-          "description": "",
+          "description": "Dead battery? We'll come to you! Mobile car battery replacement with quality batteries, warranty included, and same-day service available.",
           "heroHeading": "Mobile Car Battery Replacement",
-          "heroSubheading": "Mobile Car Battery Replacement",
+          "heroSubheading": "New Car Battery Fitted at Your Location",
           "mainHeading": "Mobile Car Battery Replacement",
           "mainContent": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+            "There's nothing worse than turning the key and... nothing. A dead battery can really mess up your day. But here's the good news - we bring the solution straight to you! Whether you're at home, work, or stuck in a car park, we'll supply and fit a quality battery on the spot.",
+            "We stock batteries for pretty much everything - from nippy city cars to big SUVs and commercial vehicles. All from top manufacturers with warranties included for peace of mind. Not sure if you actually need a new battery? We'll test it for free to check.",
+            "Our service covers everything: free battery testing, removing the old battery, fitting the new one, and disposing of the old unit properly. We'll also check your charging system to make sure everything's working as it should. Got a modern car that needs battery coding? No worries - we've got the diagnostic kit for that too.",
+            "Spot the warning signs early! Slow starting, dashboard warning lights, electrical gremlins, or a battery over 5 years old usually mean it's time for a replacement. We offer honest pricing, same-day service when you need it, and free battery testing. Get in touch for a quote and let's get you sorted."
           ]
         },
         "mobileCaravanTyreFitting": {
           "isProvided": true,
           "pageTitle": "Mobile Caravan Tyre Fitting",
-          "description": "",
+          "description": "Caravan tyres need special care! We bring expert mobile caravan tyre fitting to your home, storage facility, or even your campsite. No towing required!",
           "heroHeading": "Mobile Caravan Tyre Fitting",
-          "heroSubheading": "Mobile Caravan Tyre Fitting",
+          "heroSubheading": "Caravan Tyres Fitted at Your Location",
           "mainHeading": "Mobile Caravan Tyre Fitting",
           "mainContent": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+            "Caravan tyres aren't like regular car tyres - they need specialist knowledge and care. That's why we bring our expertise straight to you, whether you're at home, your storage facility, or even on holiday. No need to hitch up and tow your caravan anywhere!",
+            "Here's something many people don't know: caravan tyres should be replaced every 5-7 years, even if they look fine. They age and deteriorate over time, even just sitting there. We supply and fit proper caravan-specific tyres with the right load and speed ratings for your van.",
+            "Our service includes everything you need: correct torque settings on your wheel nuts, a quick check of your wheel bearings, and expert advice on the right tyre pressures for your caravan and how you load it. Need spare wheel covers? We've got those too.",
+            "Pre-season checks, emergency replacements, or routine renewals - we do it all. Single axle, twin axle, any touring caravan - we've got you covered. Book your appointment today and travel with confidence!"
           ]
         },
         "tpms": {
           "isProvided": true,
           "pageTitle": "TPMS",
-          "description": "",
+          "description": "That annoying TPMS warning light? We can fix it! Mobile Tyre Pressure Monitoring System service - diagnosis, repair, and sensor replacement at your location.",
           "heroHeading": "TPMS",
-          "heroSubheading": "TPMS",
+          "heroSubheading": "Tyre Pressure Monitoring System Service",
           "mainHeading": "TPMS",
           "mainContent": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+            "If your car was registered after 2014, it's got TPMS (Tyre Pressure Monitoring System) - and it's a legal requirement. When that warning light pops up on your dashboard, we can diagnose the problem, fix faulty sensors, and reset everything at your location. We handle all types of TPMS systems, so you're in good hands.",
+            "That glowing TPMS light is trying to tell you something! It could be low tyre pressure, a dodgy sensor, a dead sensor battery, or just a programming hiccup after getting new tyres. Using professional diagnostic kit, we'll quickly figure out what's wrong and sort it out.",
+            "Need new sensors? We supply and fit quality TPMS sensors that work with any make and model. The service includes programming, teaching your car to recognise the sensors, and making sure everything's talking to each other properly. Fun fact: sensor batteries usually last 5-10 years before they need replacing.",
+            "Don't ignore that warning light - it'll fail your MOT and might mean your tyre pressures aren't safe. Why drive to a garage when we can come to you? We fix most TPMS problems on the spot, and can replace sensors while fitting your new tyres. Get in touch and let's get that light switched off!"
           ]
         }
       }

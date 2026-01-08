@@ -9,20 +9,23 @@ const { area } = Astro.props;
   pageTitle={`Mobile Tyre Fitting in ${area.name} | ${company.name}`}
   description={`${company.name} offers fast, reliable mobile tyre fitting in ${area.name}. We come to you at home, work, or roadside. Emergency tyre repairs available 24/7. Get your quote today.`}
 >
-  <Hero 
+  <Hero
     heading={`Mobile Tyre Fitting in ${area.name}`}
     subheading={`Professional tyre services delivered to your location. Fast, reliable, and convenient.`}
   />
-  
+
   <main>
-    <div class="container my-5">
-      <section class="mb-5">
-        <h1>Expert Mobile Tyre Services in {area.name}</h1>
-        <p class="lead">
-          Whether you're at home, at work, or stranded on the roadside, <strong>{company.name}</strong> brings professional tyre services directly to you throughout <strong>{area.name}</strong>. Our experienced technicians arrive fully equipped to handle everything from routine tyre replacements to emergency roadside assistance.
-        </p>
-      </section>
+    <div class="container">
+      <h1 class="mb-4">Expert Mobile Tyre Services in {area.name}</h1>
+      <p class="">
+        Whether you're at home, at work, or stranded on the roadside, <strong
+          >{company.name}</strong
+        > brings professional tyre services directly to you throughout <strong
+          >{area.name}</strong
+        >. Our experienced technicians arrive fully equipped to handle
+        everything from routine tyre replacements to emergency roadside
+        assistance.
+      </p>
     </div>
   </main>
 </BaseLayout>
-
