@@ -12,7 +12,7 @@ interface Props {
 const { 
   heading = "Our Services",
   subheading = "Professional mobile tyre services delivered to your location",
-  columns = 3 
+  columns = 4 
 } = Astro.props;
 
 const services = getProvidedServices(pages.services);
@@ -33,27 +33,28 @@ function slugify(text: string): string {
   return text.toLowerCase().trim().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
 }
 
-const colClass = `col-md-${12 / columns}`;
+const colClass = `col-lg-${12 / columns}`;
 ---
 
-<section class="services-section py-5 bg-light">
+<section class="services-section mb-5">
   <div class="container">
     {heading && <h2 class="text-center mb-2">{heading}</h2>}
-    {subheading && <p class="text-center text-muted mb-5">{subheading}</p>}
+    {subheading && <p class="text-center text-muted mb-4">{subheading}</p>}
     
-    <div class="row g-4">
+    <div class="row g-3">
       {services.map((service) => (
-        <div class={`${colClass} col-sm-6`}>
+        <div class={`${colClass} col-md-6 col-sm-6`}>
           <a href={`/services/${slugify(service.pageTitle)}`} class="service-card-link">
-            <div class="service-card h-100">
-              <div class="service-icon">
-                <i class={`bi bi-${serviceIcons[service.pageTitle] || "gear"}`}></i>
+            <div class="service-card">
+              <div class="service-card-content">
+                <div class="service-icon">
+                  <i class={`bi bi-${serviceIcons[service.pageTitle] || "gear"}`}></i>
+                </div>
+                <h3 class="service-title">{service.pageTitle}</h3>
               </div>
-              <h3 class="service-title">{service.pageTitle}</h3>
-              <p class="service-description">{service.description}</p>
-              <span class="service-link-arrow">
-                Learn more <i class="bi bi-arrow-right"></i>
-              </span>
+              <div class="service-arrow-wrapper">
+                <i class="bi bi-arrow-right service-arrow"></i>
+              </div>
             </div>
           </a>
         </div>
@@ -75,84 +76,103 @@ const colClass = `col-md-${12 / columns}`;
   }
 
   .service-card {
-    background: white;
+    background: var(--bs-white, white);
     border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+    padding: 1.75rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
     border: 2px solid transparent;
+    position: relative;
+    height: 100%;
   }
 
   .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(var(--bs-primary-rgb, 13, 110, 253), 0.18);
     border-color: var(--bs-primary);
+  }
+
+  .service-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    width: 100%;
   }
 
   .service-icon {
     width: 64px;
     height: 64px;
-    background: linear-gradient(135deg, var(--bs-primary), var(--bs-primary-dark, #1a5acc));
+    background: var(--bs-primary);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
-    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(var(--bs-primary-rgb, 13, 110, 253), 0.25);
   }
 
   .service-card:hover .service-icon {
-    transform: rotate(5deg) scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 8px 24px rgba(var(--bs-primary-rgb, 13, 110, 253), 0.35);
+    filter: brightness(0.95);
   }
 
   .service-icon i {
-    font-size: 2rem;
-    color: white;
+    font-size: 1.75rem;
+    color: var(--bs-white, white);
   }
 
   .service-title {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     font-weight: 600;
-    margin-bottom: 1rem;
-    color: #1a1a1a;
-  }
-
-  .service-description {
-    color: #666;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
-  }
-
-  .service-link-arrow {
-    color: var(--bs-primary);
-    font-weight: 600;
-    font-size: 0.9rem;
-    display: inline-flex;
+    margin: 0;
+    color: var(--bs-dark, #212529);
+    line-height: 1.4;
+    min-height: 2.8em;
+    display: flex;
     align-items: center;
-    gap: 0.5rem;
-    transition: gap 0.3s ease;
+    justify-content: center;
   }
 
-  .service-card:hover .service-link-arrow {
-    gap: 0.75rem;
+  .service-arrow-wrapper {
+    width: 36px;
+    height: 36px;
+    background: rgba(var(--bs-primary-rgb, 13, 110, 253), 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
   }
 
-  .service-link-arrow i {
-    transition: transform 0.3s ease;
+  .service-card:hover .service-arrow-wrapper {
+    background: var(--bs-primary);
+    transform: scale(1.1);
   }
 
-  .service-card:hover .service-link-arrow i {
-    transform: translateX(4px);
+  .service-arrow {
+    color: var(--bs-primary);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+
+  .service-card:hover .service-arrow {
+    color: white;
   }
 
   /* Responsive adjustments */
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     .service-card {
-      padding: 1.5rem;
+      padding: 1.5rem 1.25rem;
     }
     
     .service-icon {
@@ -161,7 +181,50 @@ const colClass = `col-md-${12 / columns}`;
     }
     
     .service-icon i {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
+    }
+    
+    .service-title {
+      font-size: 1rem;
+      min-height: 2.6em;
+    }
+
+    .service-arrow-wrapper {
+      width: 34px;
+      height: 34px;
+    }
+
+    .service-arrow {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .service-card {
+      padding: 1.5rem 1rem;
+    }
+    
+    .service-icon {
+      width: 56px;
+      height: 56px;
+    }
+    
+    .service-icon i {
+      font-size: 1.5rem;
+    }
+
+    .service-title {
+      font-size: 0.95rem;
+      min-height: 2.8em;
+    }
+
+    .service-arrow-wrapper {
+      width: 32px;
+      height: 32px;
+    }
+
+    .service-arrow {
+      font-size: 1rem;
     }
   }
 </style>
