@@ -1,6 +1,5 @@
 ---
 import SocialLinks from "../components/SocialLinks.astro";
-import CTABar from "./CTABar.astro";
 import { company, elfsight } from "../data/config.json";
 
 const { name, phone, email, address, description, vatNo, companyNo } = company;
@@ -9,7 +8,6 @@ const year = new Date().getFullYear();
 
 
 <footer class="bg-dark text-light">
-  <CTABar />
   <div class="container py-5">
     <div class="row">
       <div class="col-md-4 mb-4 mb-md-0">
