@@ -1,12 +1,11 @@
 ---
-import TextLayout from "../layouts/TextLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import MainContent from "../components/MainContent.astro";
 import { pages } from "../data/config.json";
 const { about } = pages;
 const { pageTitle, description, mainContent } = about;
 ---
 
-<TextLayout
-  pageTitle={pageTitle}
-  description={description}
-  mainContent={mainContent}
-/>
+<BaseLayout pageTitle={pageTitle} description={description}>
+  <MainContent mainHeading={pageTitle} mainContent={mainContent} />
+</BaseLayout>

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import Hero from "../components/Hero.astro";
+import MainContent from "../components/MainContent.astro";
 const {
   pageTitle,
   description,
@@ -13,10 +14,5 @@ const {
 
 <BaseLayout pageTitle={pageTitle} description={description}>
   <Hero heading={heroHeading} subheading={heroSubheading} />
-  <main>
-    <div class="container">
-      <h1 class="mb-4">{mainHeading}</h1>
-      {mainContent.map((cont:string) => <p class="mb-3">{cont}</p>)}
-    </div>
-  </main>
+  <MainContent mainHeading={mainHeading} mainContent={mainContent} />
 </BaseLayout>

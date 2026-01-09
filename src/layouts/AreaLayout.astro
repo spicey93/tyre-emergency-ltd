@@ -2,6 +2,7 @@
 import BaseLayout from "./BaseLayout.astro";
 import { company } from "../data/config.json";
 import Hero from "../components/Hero.astro";
+import MainContent from "../components/MainContent.astro";
 const { area } = Astro.props;
 ---
 
@@ -13,19 +14,8 @@ const { area } = Astro.props;
     heading={`Mobile Tyre Fitting in ${area.name}`}
     subheading={`Professional tyre services delivered to your location. Fast, reliable, and convenient.`}
   />
-
-  <main>
-    <div class="container">
-      <h1 class="mb-4">Expert Mobile Tyre Services in {area.name}</h1>
-      <p class="">
-        Whether you're at home, at work, or stranded on the roadside, <strong
-          >{company.name}</strong
-        > brings professional tyre services directly to you throughout <strong
-          >{area.name}</strong
-        >. Our experienced technicians arrive fully equipped to handle
+  <MainContent mainHeading={`Expert Mobile Tyre Services in ${area.name}`} mainContent={[`Whether you're at home, at work, or stranded on the roadside, ${company.name} brings professional tyre services directly to you throughout ${area.name}. Our experienced technicians arrive fully equipped to handle
         everything from routine tyre replacements to emergency roadside
-        assistance.
-      </p>
-    </div>
-  </main>
+        assistance.`]}/>
+
 </BaseLayout>

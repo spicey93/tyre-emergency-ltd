@@ -3,7 +3,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ElfsightWidget from "../components/ElfsightWidget.astro";
 import ContactInfo from "../components/ContactInfo.astro";
-import Title from "../components/Title.astro";
+import MainContent from "../components/MainContent.astro";
 import { company, elfsight } from "../data/config.json";
 import { groupOpeningHours } from "../utils/openingHours";
 import { formatAddress } from "../utils/format";
@@ -13,24 +13,26 @@ const { form } = elfsight;
 const pageTitle = "Get Quote";
 
 const groupedHours = groupOpeningHours(openingHours);
-const formattedAddress = formatAddress(address, { separator: ', ' });
+const formattedAddress = formatAddress(address, { separator: ", " });
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <main>
-    <Title title={pageTitle} />
-    <div class="container">
-      <div class="row g-5">
-        <div class="col-lg-6 order-lg-2">
-          <ElfsightWidget type={form} />
-        </div>
-        <div class="col-lg-6 order-lg-1">
-          <ContactInfo icon="telephone-fill" title="Phone" text={phone} />
-          <ContactInfo icon="envelope-fill" title="Email" text={email} />
-          <ContactInfo icon="map-fill" title="Find Us" text={formattedAddress} />
-          <ContactInfo icon="clock-fill" title="Opening Hours">
-            {groupedHours.map((group) => (
-              <div class={`row text-muted ${group.isClosed ? "closed" : "open"}`}>
+  <MainContent mainHeading={pageTitle} mainContent={['If you have any questions, or would like a price for our sevices, get in touch today.']} />
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6 order-lg-2">
+        <ElfsightWidget type={form} />
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <ContactInfo icon="telephone-fill" title="Phone" text={phone} />
+        <ContactInfo icon="envelope-fill" title="Email" text={email} />
+        <ContactInfo icon="map-fill" title="Find Us" text={formattedAddress} />
+        <ContactInfo icon="clock-fill" title="Opening Hours">
+          {
+            groupedHours.map((group) => (
+              <div
+                class={`row text-muted ${group.isClosed ? "closed" : "open"}`}
+              >
                 <div class="col-6">
                   {group.days.length === 1
                     ? group.days[0]
@@ -39,14 +41,15 @@ const formattedAddress = formatAddress(address, { separator: ', ' });
                       : `${group.days[0]} - ${group.days[group.days.length - 1]}`}
                 </div>
                 <div class="col-6">
-                  {group.isClosed ? "Closed" : `${group.opens} - ${group.closes}`}
+                  {group.isClosed
+                    ? "Closed"
+                    : `${group.opens} - ${group.closes}`}
                 </div>
               </div>
-            ))}
-          </ContactInfo>
-
-        </div>
+            ))
+          }
+        </ContactInfo>
       </div>
     </div>
-  </main>
+  </div>
 </BaseLayout>
