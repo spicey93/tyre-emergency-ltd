@@ -36,10 +36,10 @@ function slugify(text: string): string {
 const colClass = `col-lg-${12 / columns}`;
 ---
 
-<section class="services-section mb-5">
+<section class="services-section bg-light py-5">
   <div class="container">
     {heading && <h2 class="text-center mb-2">{heading}</h2>}
-    {subheading && <p class="text-center text-muted mb-4">{subheading}</p>}
+    {subheading && <p class="text-center text-muted mb-5">{subheading}</p>}
     
     <div class="row g-3">
       {services.map((service) => (
