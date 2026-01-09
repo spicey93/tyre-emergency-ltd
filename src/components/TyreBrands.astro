@@ -1,0 +1,68 @@
+---
+// TyreBrands.astro
+import bridgestone from "../images/bridgestone.jpg";
+import continental from "../images/continental.jpg";
+import dunlop from "../images/dunlop.jpg";
+import firestone from "../images/firestone.jpg";
+import goodyear from "../images/goodyear.jpg";
+import hankook from "../images/hankook.jpg";
+import michelin from "../images/michelin.jpg";
+import pirelli from "../images/pirelli.jpg";
+
+const brands = [
+  { name: "Bridgestone", src: bridgestone },
+  { name: "Continental", src: continental },
+  { name: "Dunlop", src: dunlop },
+  { name: "Firestone", src: firestone },
+  { name: "Goodyear", src: goodyear },
+  { name: "Hankook", src: hankook },
+  { name: "Michelin", src: michelin },
+  { name: "Pirelli", src: pirelli },
+];
+---
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <p class="text-center mb-5 h4 fw-bold">We Supply & Fit a Wide Range of Brands</p>
+    <div class="row g-4">
+      {
+        brands.map((brand) => (
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="brand-card">
+              <img
+                src={brand.src.src}
+                alt={`${brand.name} tyres`}
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .brand-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .brand-card img {
+    max-height: 80px;
+    width: auto;
+    object-fit: contain;
+  }
+</style>

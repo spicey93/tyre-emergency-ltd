@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { company, social, elfsight } from "../data/config.json";
 import ElfsightWidget from "../components/ElfsightWidget.astro";
+import TyreBrands from "../components/TyreBrands.astro";
 const { pageTitle, description } = Astro.props;
 ---
 
@@ -96,6 +97,8 @@ const { pageTitle, description } = Astro.props;
         {elfsight.global.map((id) => <ElfsightWidget type={id} />)}
     <Header />
     <slot style="flex: 1" />
+    <TyreBrands />
+    {elfsight.testimonials && <div class="container mt-5"><ElfsightWidget type={elfsight.testimonials}></div>}
     <Footer />
     <script src="../scripts/bootstrap.min.js"></script>
     <script src='https://elfsightcdn.com/platform.js' async></script>
