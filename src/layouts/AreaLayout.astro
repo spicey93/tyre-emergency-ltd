@@ -25,63 +25,37 @@ const { area } = Astro.props;
     ]}
   />
   
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <div class="bg-white border rounded-3 p-4 p-md-5 shadow-sm">
-          <h2 class="h3 mb-4">About {area.name}</h2>
-          <p class="mb-3">{area.localInformation}</p>
-          <p class="mb-0 text-secondary">Residents and businesses across {area.name} trust {company.name} for our rapid response times, competitive prices, and exceptional customer service. Whether you need a single tyre replaced or a full set fitted, our technicians have the expertise to get you back on the road safely and quickly.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <article class="container bg-light p-3 border rounded mb-3">
+    <h2 class="mb-3">About {area.name}</h2>
+    <p>{area.localInformation}</p>
+    <p>Residents and businesses across {area.name} trust {company.name} for our rapid response times, competitive prices, and exceptional customer service. Whether you need a single tyre replaced or a full set fitted, our technicians have the expertise to get you back on the road safely and quickly.</p>
+  </article>
 
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <h2 class="h3 mb-4">Areas We Cover in {area.name}</h2>
-        <p class="mb-4 text-secondary">Our mobile tyre fitting service operates throughout {area.name} and the surrounding areas. We provide fast, reliable service to the following locations:</p>
-        
-        <div class="row g-3 mb-4">
-          <div class="col-md-6">
-            <div class="bg-light rounded-3 p-4 h-100">
-              <h3 class="h6 text-uppercase text-primary mb-3 fw-semibold">Nearby Areas</h3>
-              <div class="row row-cols-1 g-2">
-                {area.nearby.map((location: string) => (
-                  <div class="col">
-                    <div class="d-flex align-items-center">
-                      <span class="badge bg-success bg-opacity-10 text-success rounded-circle p-1 me-2" style="width: 20px; height: 20px; display: inline-flex; align-items: center; justify-content: center;">✓</span>
-                      <span class="small">{location}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-6">
-            <div class="bg-light rounded-3 p-4 h-100">
-              <h3 class="h6 text-uppercase text-primary mb-3 fw-semibold">Postcodes We Serve</h3>
-              <div class="row row-cols-1 g-2">
-                {area.postcodes.map((postcode: string) => (
-                  <div class="col">
-                    <div class="d-flex align-items-center">
-                      <span class="badge bg-success bg-opacity-10 text-success rounded-circle p-1 me-2" style="width: 20px; height: 20px; display: inline-flex; align-items: center; justify-content: center;">✓</span>
-                      <span class="small">{postcode}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="bg-primary bg-opacity-10 border border-primary rounded-3 p-4">
-          <p class="mb-0"><strong>Can't see your specific location listed?</strong> Give us a call on <a href="tel:{company.phone}" class="text-primary text-decoration-none fw-bold">{company.phone}</a> - we cover a wide area and can often accommodate requests outside our main service zones.</p>
-        </div>
+  <article class="container">
+    <h2 class="mb-3">Areas We Cover in {area.name}</h2>
+    <p>Our mobile tyre fitting service operates throughout {area.name} and the surrounding areas. We provide fast, reliable service to the following locations:</p>
+    
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h3 class="h5">Nearby Areas</h3>
+        <ul class="list-unstyled">
+          {area.nearby.map((location: string) => (
+            <li class="mb-2">✓ {location}</li>
+          ))}
+        </ul>
+      </div>
+      
+      <div class="col-md-6">
+        <h3 class="h5">Postcodes We Serve</h3>
+        <ul class="list-unstyled">
+          {area.postcodes.map((postcode: string) => (
+            <li class="mb-2">✓ {postcode}</li>
+          ))}
+        </ul>
       </div>
     </div>
-  </div>
+    
+    <p class="mt-4">Can't see your specific location listed? Give us a call on {company.phone} - we cover a wide area and can often accommodate requests outside our main service zones.</p>
+  </article>
 
 </BaseLayout>
