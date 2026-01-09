@@ -14,8 +14,74 @@ const { area } = Astro.props;
     heading={`Mobile Tyre Fitting in ${area.name}`}
     subheading={`Professional tyre services delivered to your location. Fast, reliable, and convenient.`}
   />
-  <MainContent mainHeading={`Expert Mobile Tyre Services in ${area.name}`} mainContent={[`Whether you're at home, at work, or stranded on the roadside, ${company.name} brings professional tyre services directly to you throughout ${area.name}. Our experienced technicians arrive fully equipped to handle
-        everything from routine tyre replacements to emergency roadside
-        assistance.`]}/>
+  <MainContent 
+    mainHeading={`Expert Mobile Tyre Services in ${area.name}`} 
+    mainContent={[
+      `Whether you're at home, at work, or stranded on the roadside, ${company.name} brings professional tyre services directly to you throughout ${area.name}. Our experienced technicians arrive fully equipped to handle everything from routine tyre replacements to emergency roadside assistance.`,
+      
+      `We understand that your time is valuable, which is why we've eliminated the hassle of visiting a traditional tyre fitting centre. Our mobile tyre fitting service means you can continue with your day while we take care of your vehicle. Simply let us know when and where, and we'll be there with the tyres you need.`,
+      
+      `Our comprehensive service covers all aspects of tyre care including new tyre fitting, puncture repairs, wheel balancing, and tyre pressure checks. We stock a wide range of premium brands and budget-friendly options to suit every vehicle and budget. All our work is guaranteed, and we pride ourselves on transparent pricing with no hidden fees.`
+    ]}
+  />
+  
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="bg-white border rounded-3 p-4 p-md-5 shadow-sm">
+          <h2 class="h3 mb-4">About {area.name}</h2>
+          <p class="mb-3">{area.localInformation}</p>
+          <p class="mb-0 text-secondary">Residents and businesses across {area.name} trust {company.name} for our rapid response times, competitive prices, and exceptional customer service. Whether you need a single tyre replaced or a full set fitted, our technicians have the expertise to get you back on the road safely and quickly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="h3 mb-4">Areas We Cover in {area.name}</h2>
+        <p class="mb-4 text-secondary">Our mobile tyre fitting service operates throughout {area.name} and the surrounding areas. We provide fast, reliable service to the following locations:</p>
+        
+        <div class="row g-3 mb-4">
+          <div class="col-md-6">
+            <div class="bg-light rounded-3 p-4 h-100">
+              <h3 class="h6 text-uppercase text-primary mb-3 fw-semibold">Nearby Areas</h3>
+              <div class="row row-cols-1 g-2">
+                {area.nearby.map((location: string) => (
+                  <div class="col">
+                    <div class="d-flex align-items-center">
+                      <span class="badge bg-success bg-opacity-10 text-success rounded-circle p-1 me-2" style="width: 20px; height: 20px; display: inline-flex; align-items: center; justify-content: center;">✓</span>
+                      <span class="small">{location}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="bg-light rounded-3 p-4 h-100">
+              <h3 class="h6 text-uppercase text-primary mb-3 fw-semibold">Postcodes We Serve</h3>
+              <div class="row row-cols-1 g-2">
+                {area.postcodes.map((postcode: string) => (
+                  <div class="col">
+                    <div class="d-flex align-items-center">
+                      <span class="badge bg-success bg-opacity-10 text-success rounded-circle p-1 me-2" style="width: 20px; height: 20px; display: inline-flex; align-items: center; justify-content: center;">✓</span>
+                      <span class="small">{postcode}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-primary bg-opacity-10 border border-primary rounded-3 p-4">
+          <p class="mb-0"><strong>Can't see your specific location listed?</strong> Give us a call on <a href="tel:{company.phone}" class="text-primary text-decoration-none fw-bold">{company.phone}</a> - we cover a wide area and can often accommodate requests outside our main service zones.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </BaseLayout>

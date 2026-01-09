@@ -1,7 +1,7 @@
 ---
 const { mainHeading, mainContent } = Astro.props;
 ---
-<main class="container my-5">
+<main class="container mt-5">
     <h1 class="mb-3">{mainHeading}</h1>
     {mainContent.map((content: string) => <p>{content}</p>)}
 </main>
