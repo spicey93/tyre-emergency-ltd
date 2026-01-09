@@ -1,0 +1,79 @@
+---
+// src/components/Testimonials.astro
+interface Testimonial {
+  name: string;
+  location: string;
+  rating: number;
+  text: string;
+}
+
+interface Props {
+  testimonials: Testimonial[];
+  heading?: string;
+  subheading?: string;
+}
+
+const { 
+  testimonials, 
+  heading = "What Our Customers Say",
+  subheading = "Don't just take our word for it"
+} = Astro.props;
+
+// Function to render star rating
+const renderStars = (rating: number) => {
+  return Array.from({ length: 5 }, (_, i) => i < rating ? "★" : "☆").join("");
+};
+
+---
+
+<section class="testimonials py-5">
+  <div class="container">
+    {heading && <h2 class="text-center mb-5">{heading}</h2>}
+    <!-- {subheading && <p class="text-center text-muted mb-5">{subheading}</p>} -->
+    
+    <div class="row g-4">
+      {testimonials.map((testimonial) => (
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card h-100 p-4 border rounded shadow-sm bg-white">
+            <div class="d-flex align-items-center mb-3">
+              <div class="flex-grow-1">
+                <h5 class="mb-0">{testimonial.name}</h5>
+                <small class="text-muted">
+                  <i class="bi bi-geo-alt-fill"></i> {testimonial.location}
+                </small>
+              </div>
+            </div>
+            
+            <div class="rating text-warning mb-3" aria-label={`${testimonial.rating} out of 5 stars`}>
+              <span class="fs-5">{renderStars(testimonial.rating)}</span>
+            </div>
+            
+            <blockquote class="mb-3">
+              <p class="text-muted mb-0">"{testimonial.text}"</p>
+            </blockquote>
+
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonial-card {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .rating {
+    letter-spacing: 2px;
+  }
+  
+  blockquote {
+    border-left: 3px solid var(--bs-primary);
+    padding-left: 1rem;
+  }
+</style>

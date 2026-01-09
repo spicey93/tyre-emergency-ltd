@@ -3,7 +3,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import MainContent from "../components/MainContent.astro";
 import Services from "../components/Services.astro"
-import { pages } from "../data/config.json";
+import Testimonials from "../components/Testimonials.astro";
+import { pages, marketing } from "../data/config.json";
 const { home } = pages;
 const {
   pageTitle,
@@ -22,4 +23,5 @@ const {
   />
   <MainContent mainHeading={mainHeading} mainContent={mainContent} />
   <Services />
+  <Testimonials testimonials={marketing.testimonials} />
 </BaseLayout>

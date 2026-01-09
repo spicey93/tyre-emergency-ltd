@@ -2,6 +2,9 @@
 import BaseLayout from "./BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import MainContent from "../components/MainContent.astro";
+import TyreBrands from "../components/TyreBrands.astro";
+import Testimonials from "../components/Testimonials.astro";
+import { marketing } from "../data/config.json";
 const {
   pageTitle,
   description,
@@ -15,4 +18,6 @@ const {
 <BaseLayout pageTitle={pageTitle} description={description}>
   <Hero heading={heroHeading} subheading={heroSubheading} />
   <MainContent mainHeading={mainHeading} mainContent={mainContent} />
+  <Testimonials testimonials={marketing.testimonials} />
+  <TyreBrands />
 </BaseLayout>

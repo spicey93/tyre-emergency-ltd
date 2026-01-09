@@ -53,6 +53,26 @@
       { "text": "Feature #1", "icon": "check-circle-fill" },
       { "text": "Feature #2", "icon": "check-circle-fill" },
       { "text": "Feature #3", "icon": "check-circle-fill" }
+    ],
+    "testimonials": [
+      {
+        "name": "John Smith",
+        "location": "London",
+        "rating": 5,
+        "text": "Absolutely brilliant service! They came to my work and fitted new tyres while I was in a meeting. Saved me so much time and hassle."
+      },
+      {
+        "name": "Sarah Johnson",
+        "location": "Manchester",
+        "rating": 5,
+        "text": "Had a flat tyre emergency and they arrived within 30 minutes. Professional, friendly, and great prices. Highly recommend!"
+      },
+      {
+        "name": "Mike Williams",
+        "location": "Birmingham",
+        "rating": 5,
+        "text": "Great mobile service. No more waiting around at garages. The technician was knowledgeable and explained everything clearly."
+      }
     ]
   },
   "areas": [
