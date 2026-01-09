@@ -1,0 +1,167 @@
+---
+// src/components/Services.astro
+import { pages } from "../data/config.json";
+import { getProvidedServices } from "../utils/services";
+
+interface Props {
+  heading?: string;
+  subheading?: string;
+  columns?: 2 | 3 | 4;
+}
+
+const { 
+  heading = "Our Services",
+  subheading = "Professional mobile tyre services delivered to your location",
+  columns = 3 
+} = Astro.props;
+
+const services = getProvidedServices(pages.services);
+
+// Create icon mapping for services
+const serviceIcons: Record<string, string> = {
+  "Mobile Tyre Fitting": "truck",
+  "Emergency Mobile Tyre Fitting": "exclamation-triangle-fill",
+  "Wheel Balancing": "circle-half",
+  "Locking Wheel Nut Removal": "lock",
+  "Puncture Repair": "patch-check",
+  "Mobile Car Battery Replacement": "battery-charging",
+  "Mobile Caravan Tyre Fitting": "house-door",
+  "TPMS": "speedometer2"
+};
+
+function slugify(text: string): string {
+  return text.toLowerCase().trim().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
+}
+
+const colClass = `col-md-${12 / columns}`;
+---
+
+<section class="services-section py-5 bg-light">
+  <div class="container">
+    {heading && <h2 class="text-center mb-2">{heading}</h2>}
+    {subheading && <p class="text-center text-muted mb-5">{subheading}</p>}
+    
+    <div class="row g-4">
+      {services.map((service) => (
+        <div class={`${colClass} col-sm-6`}>
+          <a href={`/services/${slugify(service.pageTitle)}`} class="service-card-link">
+            <div class="service-card h-100">
+              <div class="service-icon">
+                <i class={`bi bi-${serviceIcons[service.pageTitle] || "gear"}`}></i>
+              </div>
+              <h3 class="service-title">{service.pageTitle}</h3>
+              <p class="service-description">{service.description}</p>
+              <span class="service-link-arrow">
+                Learn more <i class="bi bi-arrow-right"></i>
+              </span>
+            </div>
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-section {
+    position: relative;
+  }
+
+  .service-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+  }
+
+  .service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+  }
+
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    border-color: var(--bs-primary);
+  }
+
+  .service-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--bs-primary), var(--bs-primary-dark, #1a5acc));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .service-card:hover .service-icon {
+    transform: rotate(5deg) scale(1.1);
+  }
+
+  .service-icon i {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .service-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+  }
+
+  .service-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+
+  .service-link-arrow {
+    color: var(--bs-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.3s ease;
+  }
+
+  .service-card:hover .service-link-arrow {
+    gap: 0.75rem;
+  }
+
+  .service-link-arrow i {
+    transition: transform 0.3s ease;
+  }
+
+  .service-card:hover .service-link-arrow i {
+    transform: translateX(4px);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 767.98px) {
+    .service-card {
+      padding: 1.5rem;
+    }
+    
+    .service-icon {
+      width: 56px;
+      height: 56px;
+    }
+    
+    .service-icon i {
+      font-size: 1.75rem;
+    }
+  }
+</style>
