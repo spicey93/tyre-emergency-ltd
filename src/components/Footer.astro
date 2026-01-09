@@ -1,13 +1,15 @@
 ---
 import SocialLinks from "../components/SocialLinks.astro";
 import CTABar from "./CTABar.astro";
-import { company } from "../data/config.json";
+import ElfsightWidget from "./ElfsightWidget.astro";
+import { company, elfsight } from "../data/config.json";
 
 const { name, phone, email, address, description, vatNo, companyNo } = company;
 const year = new Date().getFullYear();
 ---
 
-<footer class="bg-dark text-light mt-5">
+{elfsight.testimonials && <div class="bg-light mt-5 py-5"><div class="container"><ElfsightWidget type={elfsight.testimonials}></div></div>}
+<footer class="bg-dark text-light">
   <CTABar />
   <div class="container py-5">
     <div class="row">
