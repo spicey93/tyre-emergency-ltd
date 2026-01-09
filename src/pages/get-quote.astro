@@ -4,12 +4,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ElfsightWidget from "../components/ElfsightWidget.astro";
 import ContactInfo from "../components/ContactInfo.astro";
 import MainContent from "../components/MainContent.astro";
-import { company, elfsight } from "../data/config.json";
+import { company } from "../data/config.json";
 import { groupOpeningHours } from "../utils/openingHours";
 import { formatAddress } from "../utils/format";
 
 const { phone, email, address, openingHours } = company;
-const { form } = elfsight;
 const pageTitle = "Get Quote";
 
 const groupedHours = groupOpeningHours(openingHours);
@@ -18,10 +17,10 @@ const formattedAddress = formatAddress(address, { separator: ", " });
 
 <BaseLayout pageTitle={pageTitle}>
   <MainContent mainHeading={pageTitle} mainContent={['If you have any questions, or would like a price for our sevices, get in touch today.']} />
-  <div class="container">
+  <div class="container mt-5">
     <div class="row g-5">
       <div class="col-lg-6 order-lg-2">
-        <ElfsightWidget type={form} />
+
       </div>
       <div class="col-lg-6 order-lg-1">
         <ContactInfo icon="telephone-fill" title="Phone" text={phone} />

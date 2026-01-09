@@ -298,12 +298,7 @@
   },
   "elfsight": {
     "global": [
-      "ec18f45d-5135-4d0e-8f17-5ddf41f4b79e",
-      "8561491f-224c-4cb2-8bc3-77679fbe569f"
-    ],
-
-    "form": "0b7f1d60-6803-4756-961f-25e4a39de188",
-    "testimonials": "a9ee7e2b-0012-4559-84a6-914741d79f7a"
+    ]
   },
   "google": {
     "rating": "5",
