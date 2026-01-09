@@ -2,7 +2,7 @@
 // src/components/Navbar.astro (REFACTORED)
 import { company, areas, pages } from "../data/config.json";
 import { Image } from "astro:assets";
-import companyLogo from "../images/logo.svg";
+import companyLogo from "../images/logo.png";
 import slug from "../utils/slug";
 import { getNavServices } from "../utils/services";
 
@@ -12,7 +12,7 @@ const navServices = getNavServices(pages.services).map(s => ({
 }));
 ---
 
-<nav class="navbar navbar-expand-lg py-4">
+<nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" href="/">
       <Image src={companyLogo} class="site-logo" alt={`${company.name} logo`} />
