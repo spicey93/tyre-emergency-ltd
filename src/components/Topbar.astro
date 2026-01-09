@@ -1,15 +1,28 @@
 ---
+// src/components/Topbar.astro (REFACTORED)
 import { company } from "../data/config.json";
 import TopbarLink from "./TopbarLink.astro";
 import SocialLinks from "./SocialLinks.astro";
+import { formatPhoneForLink } from "../utils/format";
 
 const { phone, email } = company;
 ---
+
 <div class="bg-dark py-1 small">
   <div class="container d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
-      <TopbarLink href={`tel:${phone.replace(/\s+/g, '')}`} text={phone} mobileText="Call" icon="telephone-fill" />
-      <TopbarLink href={`mailto:${email}`} text={email} mobileText="Send Email" icon="envelope-fill" />
+      <TopbarLink 
+        href={`tel:${formatPhoneForLink(phone)}`} 
+        text={phone} 
+        mobileText="Call" 
+        icon="telephone-fill" 
+      />
+      <TopbarLink 
+        href={`mailto:${email}`} 
+        text={email} 
+        mobileText="Send Email" 
+        icon="envelope-fill" 
+      />
     </div>
 
     <SocialLinks />

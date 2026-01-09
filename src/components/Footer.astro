@@ -1,11 +1,14 @@
 ---
+// src/components/Footer.astro (REFACTORED)
 import SocialLinks from "../components/SocialLinks.astro";
-import { company, elfsight } from "../data/config.json";
+import Address from "../components/Address.astro";
+import { company } from "../data/config.json";
+import { formatPhoneForLink } from "../utils/format";
+import { quickLinks } from "../utils/navigation";
 
 const { name, phone, email, address, description, vatNo, companyNo } = company;
 const year = new Date().getFullYear();
 ---
-
 
 <footer class="bg-dark text-light">
   <div class="container py-5">
@@ -19,58 +22,36 @@ const year = new Date().getFullYear();
       <div class="col-md-4 mb-4 mb-md-0">
         <h6 class="text-white mb-3">Quick Links</h6>
         <ul class="list-unstyled small">
-          <li>
-            <a href="/about" class="link-light text-decoration-none">About</a>
-          </li>
-          <li>
-            <a href="/get-quote" class="link-light text-decoration-none"
-              >Get a Quote</a
-            >
-          </li>
-          <li>
-            <a href="/privacy-policy" class="link-light text-decoration-none"
-              >Privacy Policy</a
-            >
-          </li>
-          <li>
-            <a href="/cookie-policy" class="link-light text-decoration-none"
-              >Cookie Policy</a
-            >
-          </li>
-          <li>
-            <a
-              href="/terms-and-conditions"
-              class="link-light text-decoration-none">Terms &amp; Conditions</a
-            >
-          </li>
+          {quickLinks.map((link) => (
+            <li>
+              <a href={link.href} class="link-light text-decoration-none">
+                {link.label}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
 
       <div class="col-md-4">
         <h6 class="text-white mb-3">Contact</h6>
-        <address class="small mb-2">
-          {address.houseNo}
-          {address.streetAddress}<br />
-          {address.city}{address.county ? `, ${address.county}` : ""}<br />
-          {address.postcode}
-        </address>
-        <div class="small">
+        <Address address={address} />
+        <div class="small mt-2">
           <a
-            href={`tel:${phone.replace(/\s+/g, "")}`}
-            class="link-light text-decoration-none">{phone}</a
-          ><br />
-          <a href={`mailto:${email}`} class="link-light text-decoration-none"
-            >{email}</a
+            href={`tel:${formatPhoneForLink(phone)}`}
+            class="link-light text-decoration-none"
           >
+            {phone}
+          </a><br />
+          <a href={`mailto:${email}`} class="link-light text-decoration-none">
+            {email}
+          </a>
         </div>
       </div>
     </div>
 
     <hr class="border-light opacity-10 my-4" />
 
-    <div
-      class="d-flex flex-column flex-md-row justify-content-between small align-items-center"
-    >
+    <div class="d-flex flex-column flex-md-row justify-content-between small align-items-center">
       <div>© {year} {name}. All rights reserved.</div>
 
       <div class="small mt-2 mt-md-0">

@@ -1,12 +1,16 @@
 ---
+// src/layouts/BaseLayout.astro (REFACTORED)
 import "../styles/main.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { company, social, elfsight } from "../data/config.json";
 import ElfsightWidget from "../components/ElfsightWidget.astro";
 import TyreBrands from "../components/TyreBrands.astro";
-import CTABar from "../components/CTABar.astro"
+import CTABar from "../components/CTABar.astro";
+import { generateLocalBusinessSchema } from "../utils/schema";
+
 const { pageTitle, description } = Astro.props;
+const schema = generateLocalBusinessSchema(company, social);
 ---
 
 <html lang="en">
@@ -19,88 +23,14 @@ const { pageTitle, description } = Astro.props;
     <meta name="description" content={description} />
 
     <!-- Schema Mark Up - Local Business -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "AutoRepair",
-        "name": ${company.name},
-        "image": "",
-        "@id": "",
-        "url": `${company.website}`,
-        "telephone": ${company.phone},
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": `${company.address.houseNo} ${company.address.streetAddress}`,
-          "addressLocality": `${company.address.county}`,
-          "postalCode": `${company.address.postcode}`,
-          "addressCountry": "GB"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": company.address.latitude,
-          "longitude": company.address.longitude
-        },
-        "openingHoursSpecification": [
-          // Delete any closed days.
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Monday",
-            "opens": `${company.openingHours.monday.opens}`,
-            "closes": `${company.openingHours.monday.closes}`
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Tuesday",
-            "opens": `${company.openingHours.tuesday.opens}`,
-            "closes": `${company.openingHours.tuesday.closes}`
-          },
-                    {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Wednesday",
-            "opens": `${company.openingHours.wednesday.opens}`,
-            "closes": `${company.openingHours.wednesday.closes}`
-          },
-                    {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Thursday",
-            "opens": `${company.openingHours.thursday.opens}`,
-            "closes": `${company.openingHours.thursday.closes}`
-          },
-                    {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Friday",
-            "opens": `${company.openingHours.friday.opens}`,
-            "closes": `${company.openingHours.friday.closes}`
-          },
-                    {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": `${company.openingHours.saturday.opens}`,
-            "closes": `${company.openingHours.saturday.closes}`
-          },
-                    {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Sunday",
-            "opens": `${company.openingHours.sunday.opens}`,
-            "closes": `${company.openingHours.sunday.closes}`
-          }
-        ],
-        // Delete any social links that don't exist
-        "sameAs": [
-          `${social.facebook}`,
-          `${social.instagram}`,
-          `${social.youtube}`
-        ]
-      }
-    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body class="vh-100 d-flex flex-column">
-        {elfsight.global.map((id) => <ElfsightWidget type={id} />)}
+    {elfsight.global.map((id) => <ElfsightWidget type={id} />)}
     <Header />
     <slot style="flex: 1" />
-    <!-- {elfsight.testimonials && <div class="container mt-5"><ElfsightWidget type={elfsight.testimonials}></div>} -->
     <TyreBrands />
-      <CTABar />
+    <CTABar />
     <Footer />
     <script src="../scripts/bootstrap.min.js"></script>
     <script src='https://elfsightcdn.com/platform.js' async></script>

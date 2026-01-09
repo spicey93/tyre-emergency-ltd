@@ -1,0 +1,17 @@
+---
+// src/components/Address.astro
+const { address, inline = false } = Astro.props;
+const separator = inline ? ', ' : '<br/>';
+---
+
+{inline ? (
+  <span>
+    {address.houseNo} {address.streetAddress}, {address.city}{address.county ? `, ${address.county}` : ''}, {address.postcode}
+  </span>
+) : (
+  <address class="mb-0">
+    <span class="me-1">{address.houseNo}</span> {address.streetAddress}<br />
+    {address.city}{address.county ? `, ${address.county}` : ""}<br />
+    {address.postcode}
+  </address>
+)}

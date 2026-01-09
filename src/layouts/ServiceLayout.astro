@@ -16,7 +16,7 @@ const {
   <main>
     <div class="container">
       <h1 class="mb-4">{mainHeading}</h1>
-      {mainContent.map((cont) => <p class="mb-3">{cont}</p>)}
+      {mainContent.map((cont:string) => <p class="mb-3">{cont}</p>)}
     </div>
   </main>
 </BaseLayout>

@@ -1,18 +1,17 @@
 ---
+// src/pages/services/[service].astro (REFACTORED)
 import ServiceLayout from "../../layouts/ServiceLayout.astro";
 import { pages } from "../../data/config.json";
 import slug from "../../utils/slug";
+import { getProvidedServices } from "../../utils/services";
 
 export function getStaticPaths() {
-  const serviceGroups = Array.isArray(pages.services) ? pages.services : [];
-  const allServices = serviceGroups.flatMap((group) => Object.values(group));
+  const allServices = getProvidedServices(pages.services);
 
-  return allServices
-    .filter((s) => s.isProvided)
-    .map((service) => ({
-      params: { service: slug(service.pageTitle) },
-      props: { service },
-    }));
+  return allServices.map((service) => ({
+    params: { service: slug(service.pageTitle) },
+    props: { service },
+  }));
 }
 
 const { service } = Astro.props;

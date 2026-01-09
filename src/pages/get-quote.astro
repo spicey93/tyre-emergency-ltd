@@ -1,16 +1,19 @@
 ---
+// src/pages/get-quote.astro (REFACTORED)
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ElfsightWidget from "../components/ElfsightWidget.astro";
 import ContactInfo from "../components/ContactInfo.astro";
 import Title from "../components/Title.astro";
 import { company, elfsight } from "../data/config.json";
 import { groupOpeningHours } from "../utils/openingHours";
+import { formatAddress } from "../utils/format";
 
 const { phone, email, address, openingHours } = company;
 const { form } = elfsight;
 const pageTitle = "Get Quote";
 
 const groupedHours = groupOpeningHours(openingHours);
+const formattedAddress = formatAddress(address, { separator: ', ' });
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -24,35 +27,24 @@ const groupedHours = groupOpeningHours(openingHours);
         <div class="col-lg-6 order-lg-1">
           <ContactInfo icon="telephone-fill" title="Phone" text={phone} />
           <ContactInfo icon="envelope-fill" title="Email" text={email} />
-          <ContactInfo
-            icon="map-fill"
-            title="Find Us"
-            text=`${address.houseNo} ${address.streetAddress}, ${address.city}, ${address.county} ${address.postcode}`
-          />
+          <ContactInfo icon="map-fill" title="Find Us" text={formattedAddress} />
           <ContactInfo icon="clock-fill" title="Opening Hours">
-            {
-              groupedHours.map((group) => (
-                <div
-                  class={`row text-muted ${group.isClosed ? "closed" : "open"}`}
-                >
-                  <div class="col-6">
-                    {group.days.length === 1
-                      ? group.days[0]
-                      : group.days.length === 2
-                        ? group.days.join(" & ")
-                        : `${group.days[0]} - ${group.days[group.days.length - 1]}`}
-                  </div>
-                  <div class="col-6">
-                    {group.isClosed
-                      ? "Closed"
-                      : `${group.opens} - ${group.closes}`}
-                  </div>
+            {groupedHours.map((group) => (
+              <div class={`row text-muted ${group.isClosed ? "closed" : "open"}`}>
+                <div class="col-6">
+                  {group.days.length === 1
+                    ? group.days[0]
+                    : group.days.length === 2
+                      ? group.days.join(" & ")
+                      : `${group.days[0]} - ${group.days[group.days.length - 1]}`}
                 </div>
-              ))
-            }
+                <div class="col-6">
+                  {group.isClosed ? "Closed" : `${group.opens} - ${group.closes}`}
+                </div>
+              </div>
+            ))}
           </ContactInfo>
-          
-          <!-- {company.map && <iframe class="w-100 mt-3" height="400" src=`${company.map}`></iframe>} -->
+
         </div>
       </div>
     </div>
