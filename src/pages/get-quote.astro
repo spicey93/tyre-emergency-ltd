@@ -90,6 +90,23 @@ const availableServices = Object.entries(servicesConfig)
             </div>
 
             <div class="col-md-6 mb-3">
+              <label for="postcode" class="form-label"
+                >Postcode <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                id="postcode"
+                name="postcode"
+                class="form-control"
+                placeholder="e.g. SW1A 1AA"
+                style="text-transform: uppercase;"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
               <label for="registration" class="form-label"
                 >Vehicle Registration</label
               >
@@ -102,22 +119,22 @@ const availableServices = Object.entries(servicesConfig)
                 style="text-transform: uppercase;"
               />
             </div>
+            <div class="mb-3 col-md-6">
+              <label for="service" class="form-label"
+                >Service Required <span class="text-danger">*</span></label
+              >
+              <select id="service" name="service" class="form-select" required>
+                <option value="">-- Select a service --</option>
+                {availableServices.map((service) => (
+                  <option value={service.value}>{service.label}</option>
+                ))}
+                <option value="general-enquiry">General Enquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
           </div>
 
-          <div class="mb-3">
-            <label for="service" class="form-label"
-              >Service Required <span class="text-danger">*</span></label
-            >
-            <select id="service" name="service" class="form-select" required>
-              <option value="">-- Select a service --</option>
-              {availableServices.map((service) => (
-                <option value={service.value}>{service.label}</option>
-              ))}
-              <option value="general-enquiry">General Enquiry</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
+          
           <div class="mb-4">
             <label for="message" class="form-label">Additional Details</label>
             <textarea

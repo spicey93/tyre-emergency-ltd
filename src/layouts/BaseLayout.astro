@@ -7,7 +7,7 @@ import { company, social, elfsight, marketing } from "../data/config.json";
 import ElfsightWidget from "../components/ElfsightWidget.astro";
 import TyreBrands from "../components/TyreBrands.astro";
 import CTABar from "../components/CTABar.astro";
-import Testimonials from "../components/Testimonials.astro";
+import CookieConsent from "../components/CookieConsent.astro";
 import { generateLocalBusinessSchema } from "../utils/schema";
 
 const { pageTitle, description } = Astro.props;
@@ -33,6 +33,7 @@ const schema = generateLocalBusinessSchema(company, social);
     <TyreBrands />
     <CTABar />
     <Footer />
+    <CookieConsent />
     <script src="../scripts/bootstrap.min.js"></script>
     <script src='https://elfsightcdn.com/platform.js' async></script>
   </body>
