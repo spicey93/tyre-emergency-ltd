@@ -3,8 +3,7 @@
 import "../styles/main.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { company, social, elfsight, marketing } from "../data/config.json";
-import ElfsightWidget from "../components/ElfsightWidget.astro";
+import { company, social } from "../data/config.json";
 import TyreBrands from "../components/TyreBrands.astro";
 import CTABar from "../components/CTABar.astro";
 import CookieConsent from "../components/CookieConsent.astro";
@@ -27,7 +26,6 @@ const schema = generateLocalBusinessSchema(company, social);
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body class="vh-100 d-flex flex-column">
-    {elfsight.global.map((id) => <ElfsightWidget type={id} />)}
     <Header />
     <slot style="flex: 1" />
     <TyreBrands />
