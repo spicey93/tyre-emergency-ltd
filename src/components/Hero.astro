@@ -1,5 +1,6 @@
 ---
 import GoogleBadge from "./GoogleBadge.astro";
+import QuoteBtn from "./QuoteBtn.astro";
 const {
   heading = "Main Heading",
   subheading = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -17,9 +18,7 @@ const {
           {subheading}
         </p>
         <div class="d-grid d-lg-block">
-          <a href="/get-quote" class="btn btn-primary text-light btn-lg"
-            >Get Quote</a
-          >
+          <QuoteBtn />
         </div>
         <GoogleBadge quantity="500" />
       </div>

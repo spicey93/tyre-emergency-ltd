@@ -2,6 +2,7 @@
 // src/components/CTABar.astro (REFACTORED)
 import { company } from "../data/config.json";
 import { formatPhoneForLink } from "../utils/format";
+import QuoteBtn from "./QuoteBtn.astro";
 ---
 
 <div class="border-bottom border-primary border-3 bg-dark text-light">
@@ -13,21 +14,15 @@ import { formatPhoneForLink } from "../utils/format";
           <span class="me-2">Call us on</span>
           <a 
             href={`tel:${formatPhoneForLink(company.phone)}`} 
-            class="phone-number link-light text-decoration-none fw-bold"
+            class="phone-number link-light text-decoration-none fw-bold me-3"
           >
             {company.phone}
           </a>
           <span class="separator d-none d-lg-inline mx-3">|</span>
         </div>
       </div>
-      <div class="col-12 col-lg-auto text-center text-lg-start">
-        <a 
-          href="/get-quote" 
-          class="btn btn-primary text-light px-4 py-2 shadow-sm"
-        >
-          <i class="bi bi-envelope-fill me-2"></i>
-          Get Your Free Quote
-        </a>
+      <div class="col-12 col-lg-auto text-center">
+        <QuoteBtn />
       </div>
     </div>
   </div>

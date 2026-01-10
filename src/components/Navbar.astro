@@ -3,6 +3,7 @@
 import { company, areas, pages } from "../data/config.json";
 import { Image } from "astro:assets";
 import companyLogo from "../images/logo.png";
+import QuoteBtn from "./QuoteBtn.astro";
 import slug from "../utils/slug";
 import { getNavServices } from "../utils/services";
 
@@ -76,12 +77,13 @@ const navServices = getNavServices(pages.services).map(s => ({
             ))}
           </ul>
         </li>
-        <a
+        <!-- <a
           href="/get-quote"
           class="btn btn-primary ms-lg-3 mt-2 mt-lg-0 text-light"
         >
           Get Quote
-        </a>
+        </a> -->
+        <QuoteBtn />
       </ul>
     </div>
   </div>
