@@ -1,0 +1,133 @@
+---
+import { pages } from "../data/config.json";
+// Get services from config
+const servicesConfig = pages.services[0];
+const availableServices = Object.entries(servicesConfig)
+  .filter(([_, service]) => service.isProvided)
+  .map(([key, service]) => ({
+    value: key,
+    label: service.pageTitle,
+  }));
+---
+
+<form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  class="quote-form"
+  data-netlify-recaptcha="true"
+>
+  <input type="hidden" name="form-name" value="contact" />
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="name" class="form-label"
+        >Full Name <span class="text-danger">*</span></label
+      >
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="form-control"
+        placeholder="John Smith"
+        required
+      />
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <label for="email" class="form-label"
+        >Email Address <span class="text-danger">*</span></label
+      >
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="form-control"
+        placeholder="john@example.com"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="phone" class="form-label"
+        >Phone Number <span class="text-danger">*</span></label
+      >
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        class="form-control"
+        placeholder="07XXX XXXXXX"
+        required
+      />
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <label for="postcode" class="form-label"
+        >Postcode <span class="text-danger">*</span></label
+      >
+      <input
+        type="text"
+        id="postcode"
+        name="postcode"
+        class="form-control"
+        placeholder="e.g. SW1A 1AA"
+        style="text-transform: uppercase;"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="registration" class="form-label">Vehicle Registration</label>
+      <input
+        type="text"
+        id="registration"
+        name="registration"
+        class="form-control"
+        placeholder="e.g. AB12 CDE"
+        style="text-transform: uppercase;"
+      />
+    </div>
+    <div class="mb-3 col-md-6">
+      <label for="service" class="form-label"
+        >Service Required <span class="text-danger">*</span></label
+      >
+      <select id="service" name="service" class="form-select" required>
+        <option value="">-- Select a service --</option>
+        {
+          availableServices.map((service) => (
+            <option value={service.value}>{service.label}</option>
+          ))
+        }
+        <option value="general-enquiry">General Enquiry</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <label for="message" class="form-label">Additional Details</label>
+    <textarea
+      id="message"
+      name="message"
+      class="form-control"
+      rows="5"
+      placeholder="Please provide any additional information about your requirements..."
+    ></textarea>
+  </div>
+
+  <div data-netlify-recaptcha="true"></div>
+
+  <button type="submit" class="btn btn-primary text-light">
+    <i class="bi bi-send-fill me-2"></i>Get Quote
+  </button>
+
+  <p class="text-muted small mt-3 mb-0">
+    <i class="bi bi-shield-check me-1"></i>
+    We respect your privacy and will never share your information.
+  </p>
+</form>
