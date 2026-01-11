@@ -232,35 +232,224 @@
     ],
     "cookie": {
       "pageTitle": "Cookie Policy",
-      "description": "Description for cookie policy page.",
+      "description": "Cookie policy for Tyre Emergency Ltd. How we use cookies and similar technologies on our website. What cookies we use, why we use them, and how to control them.",
       "mainContent": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+        "1. INTRODUCTION",
+        "This Cookie Policy explains how Tyre Emergency Ltd ('we', 'us', 'our') uses cookies and similar technologies on our website https://tyreemergency.com. This policy should be read alongside our Privacy Policy, which provides more information about how we collect and use personal data.",
+        "By using our website, you consent to the use of cookies in accordance with this Cookie Policy. If you do not agree with our use of cookies, you should change your browser settings accordingly or stop using our website.",
+        "Company Details: Tyre Emergency Ltd, Newark, Nottinghamshire NG22 8GA. Company Number: 15362025. VAT Number: 456597051. ICO Registration: ZB755609. Phone: 0330 133 9311. Email: contact@tyreemergency.com. Website: https://tyreemergency.com",
+        "Last Updated: 11 January 2026",
+        
+        "2. WHAT ARE COOKIES?",
+        "Cookies are small text files that are placed on your device (computer, smartphone, or tablet) when you visit a website. Cookies are widely used to make websites work more efficiently and to provide information to website owners. Cookies allow websites to recognize your device and remember information about your visit, such as your preferences or login status.",
+        "Cookies can be 'session cookies' (which are deleted when you close your browser) or 'persistent cookies' (which remain on your device for a set period or until you delete them). Cookies can also be 'first-party cookies' (set by the website you are visiting) or 'third-party cookies' (set by a different website, such as an analytics or advertising service).",
+        "In addition to traditional cookies, we also use similar technologies such as browser local storage, which stores data locally in your browser similar to cookies but with different technical characteristics.",
+        
+        "3. WHY WE USE COOKIES",
+        "We use cookies and similar technologies for the following reasons: to remember your cookie consent preferences, to protect our website forms from spam and abuse, to enable essential website functionality, and to improve your experience on our website. We do not currently use cookies for analytics, advertising, or marketing purposes.",
+        
+        "4. COOKIES WE USE",
+        "Our website uses minimal tracking technologies. We are committed to transparency about what we use and why.",
+        
+        "4.1 STRICTLY NECESSARY COOKIES AND STORAGE",
+        "These are essential for our website to function properly and cannot be disabled without severely affecting your use of the website.",
+        "localStorage: cookieConsent - Purpose: Stores your cookie consent preference so we don't show you the cookie banner on every visit. Type: Browser local storage (not a traditional cookie). Duration: Persistent (remains until you clear your browser data). Category: Strictly necessary. Legal basis: Legitimate interest (remembering your consent choice).",
+        "Note: Despite our cookie consent banner referring to 'cookies', we actually use localStorage (a browser storage mechanism) rather than traditional cookies to store your consent preference. This distinction is technical but worth noting for transparency.",
+        
+        "4.2 FUNCTIONAL COOKIES (THIRD-PARTY)",
+        "These cookies enable specific functionality on our website, such as form submission and spam protection.",
+        
+        "Google reCAPTCHA Cookies - Purpose: Google reCAPTCHA protects our quote form from spam and automated abuse. It analyzes your behavior on the page to determine whether you are a human or a bot. Provider: Google LLC. Cookies set: Google may set various cookies including _GRECAPTCHA, rc::a, rc::b, rc::c. Duration: Varies (session cookies and persistent cookies up to 6 months). Category: Functional (required for form submission). Legal basis: Legitimate interest (protecting our systems and preventing abuse). Privacy policy: https://policies.google.com/privacy. Opt-out: You cannot opt out of reCAPTCHA cookies if you wish to use our quote form. However, you can contact us directly by phone or email instead.",
+        
+        "Netlify Forms - Purpose: Netlify processes our website forms and may set cookies for form functionality, session management, and spam prevention. Provider: Netlify, Inc. Cookies set: May include session cookies for form processing. Duration: Varies (typically session cookies). Category: Functional (required for form submission). Legal basis: Legitimate interest (processing your quote requests). Privacy policy: https://www.netlify.com/privacy/.",
+        
+        "4.3 OPTIONAL THIRD-PARTY SERVICES",
+        "Elfsight Widgets - Purpose: We may use Elfsight widgets to display reviews or other interactive content on our website. If Elfsight widgets are present, they may set cookies for functionality and analytics. Provider: Elfsight. Cookies set: Various cookies for widget functionality. Duration: Varies. Category: Functional / Analytics (depending on the specific widget). Legal basis: Consent or legitimate interest. Privacy policy: https://elfsight.com/privacy-policy/. Current status: Elfsight widgets may or may not be active on the site at any given time.",
+        
+        "4.4 COOKIES WE DO NOT USE",
+        "We want to be clear about what we do NOT use: Google Analytics - We do not currently use Google Analytics or any other analytics platform to track website visitors. Google Tag Manager - We do not use Google Tag Manager. Facebook Pixel or Social Media Tracking - We do not use Facebook Pixel, LinkedIn Insight Tag, or any social media tracking pixels. Advertising Cookies - We do not use any advertising or remarketing cookies. Marketing Automation - We do not use marketing automation platforms that track your behavior across visits.",
+        "Our website has minimal tracking compared to most modern websites. We only use what is necessary to operate our service and protect our forms from spam.",
+        
+        "5. HOW TO CONTROL AND DELETE COOKIES",
+        "5.1 Browser Settings - Most web browsers allow you to control cookies through their settings. You can set your browser to: refuse all cookies, accept only certain cookies, delete cookies when you close your browser, or notify you when a website tries to place a cookie.",
+        "Here's how to manage cookies in common browsers: Google Chrome - Settings > Privacy and security > Cookies and other site data. Mozilla Firefox - Settings > Privacy & Security > Cookies and Site Data. Microsoft Edge - Settings > Cookies and site permissions > Cookies and site data. Safari - Preferences > Privacy > Cookies and website data. For mobile browsers, consult your device's help documentation.",
+        
+        "5.2 Disabling Specific Cookies - To disable Google reCAPTCHA: Note that disabling reCAPTCHA cookies will prevent you from submitting our quote form. You can contact us directly by phone (0330 133 9311) or email (contact@tyreemergency.com) instead. To disable Netlify cookies: Blocking Netlify cookies may prevent form submission. Again, you can contact us directly by alternative methods.",
+        
+        "5.3 Clearing Your Browser Data - You can delete all cookies and local storage from your browser at any time: Chrome - Settings > Privacy and security > Clear browsing data > Cookies and other site data. Firefox - Settings > Privacy & Security > Cookies and Site Data > Clear Data. Edge - Settings > Privacy, search, and services > Clear browsing data > Cookies and other site data. Safari - Preferences > Privacy > Manage Website Data > Remove All.",
+        "Note that clearing cookies will also delete your cookie consent preference, so you may see our cookie banner again on your next visit.",
+        
+        "5.4 Impact of Disabling Cookies - If you disable or refuse cookies: You may not be able to submit our quote form (you can still contact us by phone or email). You will see our cookie consent banner on every visit if you clear localStorage. Essential website functionality should still work. You will not be able to use any interactive widgets that rely on cookies.",
+        "Our website is designed to work with minimal cookies, so disabling cookies should not significantly impact your experience, provided you use alternative contact methods.",
+        
+        "6. THIRD-PARTY WEBSITES",
+        "Our website contains links to third-party websites, including social media platforms (Facebook, Instagram, YouTube) and Google My Business. These websites have their own cookie policies that are independent of ours. We are not responsible for the cookies or privacy practices of third-party websites. We recommend reviewing the cookie policies of any third-party websites you visit from our site.",
+        
+        "7. CHANGES TO THIS COOKIE POLICY",
+        "We may update this Cookie Policy from time to time to reflect changes in our use of cookies, legal requirements, or website functionality. The 'Last Updated' date at the top of this document indicates when changes were last made. If we make significant changes, we will notify you by updating this page and, where appropriate, displaying a prominent notice on our website. Continued use of our website after changes constitutes acceptance of the revised Cookie Policy.",
+        
+        "8. MORE INFORMATION ABOUT COOKIES",
+        "If you would like more information about cookies and how they work, you can visit: All About Cookies - www.allaboutcookies.org. Information Commissioner's Office (ICO) - www.ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/cookies-and-similar-technologies. Your Online Choices - www.youronlinechoices.com (information about behavioral advertising and how to opt out).",
+        
+        "9. CONTACT US",
+        "If you have any questions about this Cookie Policy or how we use cookies on our website, please contact us: Tyre Emergency Ltd, Newark, Nottinghamshire NG22 8GA. Phone: 0330 133 9311. Email: contact@tyreemergency.com. Website: https://tyreemergency.com",
+        "For questions about your personal data and privacy, please see our Privacy Policy at https://tyreemergency.com/privacy-policy."
       ]
     },
     "privacy": {
       "pageTitle": "Privacy Policy",
-      "description": "Description for privacy policy page.",
+      "description": "Privacy policy for Tyre Emergency Ltd. How we collect, use, and protect your personal data. GDPR-compliant. ICO registered. Your rights to access, delete, and control your information.",
       "mainContent": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+        "1. INTRODUCTION",
+        "Tyre Emergency Ltd ('we', 'us', 'our') is committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our mobile tyre fitting services or interact with our website.",
+        "We are registered with the Information Commissioner's Office (ICO) under registration number ZB755609 and comply with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.",
+        "Company Details: Tyre Emergency Ltd, Newark, Nottinghamshire NG22 8GA. Company Number: 15362025. VAT Number: 456597051. ICO Registration: ZB755609. Phone: 0330 133 9311. Email: contact@tyreemergency.com. Website: https://tyreemergency.com",
+        "Last Updated: 11 January 2026",
+        
+        "2. DATA CONTROLLER",
+        "Tyre Emergency Ltd is the data controller responsible for your personal data. This means we determine how and why your personal information is processed. If you have any questions about how we handle your data, please contact us using the details above.",
+        
+        "3. WHAT PERSONAL DATA WE COLLECT",
+        "3.1 Information You Provide to Us - When you request a quote or book our services through our website form or by phone, we collect the following information: your full name, email address, phone number, postcode or location, vehicle registration number (optional), the service you require, and any additional details you provide about your situation or requirements.",
+        "3.2 Information Collected Automatically - When you visit our website, certain technical information may be collected automatically, including your IP address, browser type and version, operating system, referring website, pages viewed, and time/date of visit. This information is collected through browser storage (localStorage) and may be collected by third-party services we use (see Section 6).",
+        "3.3 Information We Do NOT Collect - We do not collect sensitive personal data (such as health information, racial or ethnic origin, political opinions, religious beliefs, or biometric data). We do not create user accounts, so we do not collect passwords or login credentials. We do not knowingly collect information from children under 16 years of age.",
+        
+        "4. HOW WE USE YOUR PERSONAL DATA",
+        "4.1 Purpose of Processing - We use your personal data for the following purposes: to provide you with a quote for our services, to deliver the mobile tyre fitting services you have requested, to contact you about your booking or service request, to respond to your enquiries and provide customer support, to process payments for our services, to send you service-related communications (such as appointment confirmations or technician location updates), to comply with legal obligations (such as tax and accounting requirements), and to improve our services and customer experience.",
+        "4.2 Legal Basis for Processing - We process your personal data based on the following legal grounds: Consent - when you submit your information through our quote form, you consent to us using that information to contact you and provide a quote. Contract Performance - when you book our services, we need to process your data to fulfil our contractual obligations to you. Legitimate Interests - we have a legitimate interest in operating our business efficiently, improving our services, and preventing fraud. Legal Obligation - we are required by law to retain certain information for tax, accounting, and regulatory purposes.",
+        "4.3 Marketing Communications - We do not send marketing emails or promotional materials unless you have explicitly opted in to receive them. If you have opted in, you can unsubscribe at any time by contacting us or clicking the unsubscribe link in any marketing email.",
+        
+        "5. HOW LONG WE KEEP YOUR DATA",
+        "5.1 Data Retention Period - We retain personal data collected through quote requests for a maximum of 1 month from the date of submission. If there is no progression towards booking our services within this period, your data is automatically deleted from our system.",
+        "5.2 Completed Jobs - For completed jobs where services have been provided and paid for, we retain your information for up to 6 years to comply with UK tax and accounting regulations (HMRC requirements). This includes your name, contact details, service details, invoice information, and payment records.",
+        "5.3 Warranty Claims - If you make a warranty claim under our 30-day workmanship warranty, we will retain relevant information for the duration of the warranty period plus a reasonable period afterwards to handle any disputes (typically up to 1 year from the date of service).",
+        "5.4 Your Right to Request Earlier Deletion - You can request that we delete your personal data earlier than the standard retention periods, subject to our legal obligations to retain certain information for tax and accounting purposes. See Section 9 for how to exercise this right.",
+        
+        "6. WHO WE SHARE YOUR DATA WITH",
+        "6.1 Third-Party Service Providers - We use the following third-party services that may process your personal data: Netlify - Our website forms are processed through Netlify Forms. Netlify acts as a data processor and stores form submissions securely. Netlify's privacy policy is available at https://www.netlify.com/privacy/. Google reCAPTCHA - We use Google reCAPTCHA to protect our forms from spam and abuse. Google collects technical information to determine whether you are a human or a bot. Google's privacy policy is available at https://policies.google.com/privacy. Elfsight - We may use Elfsight widgets on our website for displaying reviews or other interactive content. Elfsight may collect usage data. Elfsight's privacy policy is available at https://elfsight.com/privacy-policy/.",
+        "6.2 Payment Processors - When you make a payment, your payment card details are processed directly by our payment service provider. We do not store your full payment card details on our systems. Payment processors comply with PCI-DSS security standards.",
+        "6.3 Legal Requirements - We may disclose your personal data if required to do so by law, court order, or other legal process, or if we believe disclosure is necessary to protect our rights, your safety, or the safety of others.",
+        "6.4 Business Transfers - If our business is sold, merged, or restructured, your personal data may be transferred to the new owner, but it will remain subject to the terms of this Privacy Policy or an equivalent policy.",
+        "6.5 No Third-Party Marketing - We do not sell, rent, or share your personal data with third parties for their marketing purposes.",
+        
+        "7. DATA SECURITY",
+        "We take appropriate technical and organizational measures to protect your personal data against unauthorized access, accidental loss, destruction, or damage. These measures include: secure data storage with encryption, access controls limiting who can view your data within our organization, secure transmission of data using SSL/TLS encryption (HTTPS), regular security reviews and updates to our systems, and password protection and authentication for our internal systems.",
+        "However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your personal data, we cannot guarantee absolute security. If you become aware of any security breach or unauthorized access to your data, please contact us immediately.",
+        
+        "8. INTERNATIONAL DATA TRANSFERS",
+        "Your personal data is primarily stored and processed within the United Kingdom. Some of our third-party service providers (such as Netlify and Google) may process data outside the UK or European Economic Area (EEA). Where data is transferred internationally, we ensure that appropriate safeguards are in place, such as: Standard Contractual Clauses approved by the UK Information Commissioner's Office, adequacy decisions recognizing that the destination country provides adequate data protection, or certification under recognized data protection frameworks.",
+        "We ensure that any international transfers comply with UK GDPR requirements and that your data receives an equivalent level of protection.",
+        
+        "9. YOUR RIGHTS UNDER UK GDPR",
+        "9.1 Right of Access - You have the right to request a copy of the personal data we hold about you. This is known as a 'subject access request'. We will provide this information free of charge within one month of your request.",
+        "9.2 Right to Rectification - You have the right to request that we correct any inaccurate or incomplete personal data we hold about you. We will correct the data within one month of your request.",
+        "9.3 Right to Erasure ('Right to be Forgotten') - You have the right to request that we delete your personal data in certain circumstances, such as: the data is no longer necessary for the purposes for which it was collected, you withdraw your consent (where consent was the legal basis for processing), you object to the processing and there are no overriding legitimate grounds, or the data has been unlawfully processed. Please note that we may be required to retain certain data to comply with legal obligations (such as tax records for 6 years).",
+        "9.4 Right to Restrict Processing - You have the right to request that we restrict how we use your personal data in certain circumstances, such as while we verify the accuracy of data you have contested, or while we assess your objection to processing.",
+        "9.5 Right to Data Portability - You have the right to receive your personal data in a structured, commonly used, and machine-readable format (such as CSV or JSON) and to transmit that data to another organization, where technically feasible.",
+        "9.6 Right to Object - You have the right to object to our processing of your personal data where we are relying on legitimate interests as the legal basis for processing. If you object, we will stop processing your data unless we can demonstrate compelling legitimate grounds that override your interests.",
+        "9.7 Right to Withdraw Consent - Where we are processing your data based on your consent, you have the right to withdraw that consent at any time. This will not affect the lawfulness of processing that occurred before you withdrew consent.",
+        "9.8 Automated Decision-Making and Profiling - We do not use automated decision-making or profiling that produces legal effects or similarly significantly affects you.",
+        
+        "10. HOW TO EXERCISE YOUR RIGHTS",
+        "To exercise any of your rights under UK GDPR, please contact us: Email: contact@tyreemergency.com. Phone: 0330 133 9311. Post: Tyre Emergency Ltd, Newark, Nottinghamshire NG22 8GA.",
+        "When making a request, please provide sufficient information to help us identify you and process your request. We may ask for proof of identity to ensure we are releasing information to the correct person. We will respond to your request within one month. In complex cases, we may extend this by up to two additional months, but we will inform you if this is necessary and explain the reasons for the delay.",
+        
+        "11. COMPLAINTS",
+        "If you are unhappy with how we have handled your personal data or how we have responded to a request to exercise your rights, you have the right to complain to the supervisory authority. In the UK, this is the Information Commissioner's Office (ICO).",
+        "Information Commissioner's Office: Website: https://ico.org.uk. Phone: 0303 123 1113. Post: Information Commissioner's Office, Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF.",
+        "You can also submit a complaint online through the ICO's website. We would appreciate the opportunity to resolve any concerns before you contact the ICO, so please contact us first if possible.",
+        
+        "12. COOKIES AND TRACKING TECHNOLOGIES",
+        "Our website uses minimal tracking technologies. For full details about cookies and similar technologies we use, please see our Cookie Policy at https://tyreemergency.com/cookie-policy.",
+        "In summary, we use: localStorage to remember your cookie consent preference, Google reCAPTCHA (which may set cookies for bot detection), and Netlify Forms (which may set cookies for form functionality). We do not currently use analytics cookies, advertising cookies, or other marketing tracking technologies.",
+        
+        "13. LINKS TO OTHER WEBSITES",
+        "Our website may contain links to third-party websites, such as our social media profiles (Facebook, Instagram, YouTube) or Google My Business. We are not responsible for the privacy practices or content of these external sites. We encourage you to read the privacy policies of any third-party websites you visit.",
+        
+        "14. CHANGES TO THIS PRIVACY POLICY",
+        "We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or service offerings. The 'Last Updated' date at the top of this document indicates when changes were last made. We will notify you of any material changes by updating this page and, where appropriate, by contacting you directly if we have your contact information. Continued use of our services after changes constitutes acceptance of the revised Privacy Policy.",
+        
+        "15. CHILDREN'S PRIVACY",
+        "Our services are not directed at children under 16 years of age. We do not knowingly collect personal data from children. If you are a parent or guardian and believe your child has provided us with personal data, please contact us and we will delete that information from our systems.",
+        
+        "16. CONTACT US",
+        "If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your personal data, please contact us: Tyre Emergency Ltd, Newark, Nottinghamshire NG22 8GA. Phone: 0330 133 9311. Email: contact@tyreemergency.com. Website: https://tyreemergency.com",
+        "We aim to respond to all enquiries within 5 working days."
       ]
     },
     "terms": {
       "pageTitle": "Terms & Conditions",
-      "description": "Description for terms and conditions page.",
+      "description": "Terms and conditions for Tyre Emergency Ltd mobile tyre fitting services. Covering service areas, response times, payment terms, deposits, warranties, and liability. Last updated January 11, 2026.",
       "mainContent": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+        "1. INTRODUCTION",
+        "These Terms and Conditions ('Terms') govern the provision of mobile tyre fitting and related services by Tyre Emergency Ltd ('we', 'us', 'our') to customers ('you', 'your'). By requesting a quote, booking our services, or allowing us to carry out work on your vehicle, you agree to be bound by these Terms.",
+        "Company Details: Tyre Emergency Ltd, Newark, Nottinghamshire NG22 8GA. Company Number: 15362025. VAT Number: 456597051. ICO Registration: ZB755609. Phone: 0330 133 9311. Email: contact@tyreemergency.com. Website: https://tyreemergency.com",
+        "Last Updated: 11 January 2026",
+        
+        "2. SERVICES PROVIDED",
+        "2.1 Service Description - We provide emergency mobile tyre fitting services across Nottinghamshire, including tyre replacement, locking wheel nut removal, and TPMS (Tyre Pressure Monitoring System) diagnostics and repair. Our services are delivered at your location, whether at home, workplace, or roadside.",
+        "2.2 Coverage Areas - We operate in the following primary areas: Newark (postcodes: NG22, NG23, NG24), Mansfield (postcodes: NG18, NG19, NG20, NG21), Worksop (postcodes: S80, S81), and Retford (postcodes: DN22). We may provide services outside these areas at our discretion. Additional charges may apply for locations outside our standard service area, and deposits may be required (see Section 4).",
+        "2.3 Operating Hours - We operate 7 days a week, Monday to Sunday: 6:00 AM - 6:00 PM. Emergency call-outs are available during these hours only. We do not operate outside these hours except in exceptional circumstances and by prior arrangement.",
+        
+        "3. RESPONSE TIMES AND SERVICE AVAILABILITY",
+        "3.1 Target Response Times - We aim to respond to emergency call-outs within 30-60 minutes of receiving your call during our operating hours. This is a target response time and not a guaranteed service level.",
+        "3.2 No Guarantee of Response Time - Response times are subject to factors beyond our control, including but not limited to: traffic conditions, weather, distance to your location, technician availability, and volume of simultaneous call-outs. We will always endeavour to reach you as quickly as possible, but we cannot guarantee specific arrival times.",
+        "3.3 Service Refusal - We reserve the right to refuse service in circumstances including but not limited to: unsafe working conditions, threatening or abusive behaviour, locations that are inaccessible or unsafe for our technicians, or situations where we determine we cannot complete the work safely and professionally.",
+        
+        "4. PRICING, PAYMENT TERMS, AND DEPOSITS",
+        "4.1 Quotations - We provide quotations based on the information you provide about your vehicle and required services. All quotations are estimates and may be subject to change if the actual work required differs from the information provided. We will inform you of any price changes before commencing work.",
+        "4.2 Standard Payment Terms - For standard emergency call-outs within our primary service areas, payment is due in full upon completion of the work. We will not release your vehicle or leave the site until payment has been received in full.",
+        "4.3 Deposit Requirements - We may require a deposit for certain jobs, including but not limited to: services outside our standard coverage areas, requests for specific tyre brands or sizes that must be specially sourced, jobs requiring advance ordering of parts or materials, and multiple vehicle bookings or large jobs. The deposit amount will be determined on a case-by-case basis and communicated to you at the time of booking. Deposits are typically paid via bank transfer or card payment before we allocate resources to your job.",
+        "4.4 Non-Refundable Deposits - IMPORTANT: Once a deposit has been paid, it is immediately non-refundable, even if you cancel the job. By paying a deposit, you confirm the job and we allocate resources accordingly (technician time, stock procurement, scheduling). This allocation means we cannot accept other jobs during that time slot. The deposit covers our costs and opportunity cost of lost business resulting from resource allocation to your confirmed job.",
+        "4.5 Accepted Payment Methods - We accept the following payment methods: credit and debit cards, cash, and bank transfer (typically for deposits or by prior arrangement). Payment must be made in GBP (British Pounds Sterling).",
+        "4.6 VAT - All prices quoted are inclusive of VAT at the applicable rate. A VAT receipt will be provided upon request.",
+        
+        "5. VEHICLE TYPES AND SERVICE LIMITATIONS",
+        "5.1 Vehicles We Service - We provide services for the following vehicle types: cars, vans, caravans, motorhomes, trailers, and SUVs.",
+        "5.2 Vehicles We Do NOT Service - We do not provide services for: motorcycles or scooters, Heavy Goods Vehicles (HGVs), agricultural vehicles or machinery, or any vehicle we determine to be unsafe or unsuitable for mobile tyre fitting.",
+        "5.3 Puncture Repairs - WE DO NOT CARRY OUT PUNCTURE REPAIRS. Our service model is based on tyre replacement, not repair. If you have a damaged tyre, we will replace it with a new or suitable tyre. We do not patch, plug, or repair punctured tyres.",
+        
+        "6. YOUR RESPONSIBILITIES",
+        "6.1 Accurate Information - You must provide accurate information about your vehicle (make, model, registration), your location, and the nature of the problem. Inaccurate information may result in delays, inability to complete the work, or additional charges.",
+        "6.2 Safe Working Environment - You must ensure that the location where work is to be carried out is reasonably safe and accessible for our technicians. For roadside call-outs, you should position your vehicle as safely as possible and use hazard lights and warning triangles where appropriate.",
+        "6.3 Vehicle Ownership or Authority - You confirm that you are either the owner of the vehicle or have authority from the owner to instruct us to carry out work. We are not liable for any disputes regarding vehicle ownership or authority to instruct work.",
+        "6.4 Vehicle Condition - You are responsible for informing us of any pre-existing damage to your vehicle, particularly wheels, wheel studs, or locking wheel nuts. We are not responsible for pre-existing damage that is discovered during the course of our work.",
+        
+        "7. WARRANTIES AND GUARANTEES",
+        "7.1 Workmanship Warranty - We warrant that all work will be carried out to a professional standard using appropriate tools and techniques. If you experience any issues that are directly caused by poor installation or workmanship on our part, we will investigate and rectify the issue free of charge within 30 days of the original work being completed.",
+        "7.2 Tyre Product Warranty - WE PROVIDE NO WARRANTY ON THE TYRES THEMSELVES. Tyres are manufactured goods supplied by third-party manufacturers. Any manufacturing defects or product issues with the tyres themselves are covered by the tyre manufacturer's warranty, not by us. We can assist you in pursuing a manufacturer warranty claim if required.",
+        "7.3 Exclusions from Workmanship Warranty - Our workmanship warranty does not cover: damage caused by your driving, impacts, kerbing, or misuse after we complete the work; normal wear and tear of tyres; damage caused by failure to maintain correct tyre pressures; pre-existing damage to wheels, studs, or vehicle components; work carried out by third parties after our service; or issues arising from incorrect information provided by you about your vehicle.",
+        "7.4 Making a Warranty Claim - To make a warranty claim, contact us within 30 days of the original work at contact@tyreemergency.com or 0330 133 9311. We will require details of the issue, your original invoice, and an opportunity to inspect the vehicle. We reserve the right to determine whether an issue falls within our workmanship warranty.",
+        
+        "8. LIMITATION OF LIABILITY",
+        "8.1 Liability Cap - To the fullest extent permitted by law, our total liability to you in connection with our services, whether in contract, tort (including negligence), breach of statutory duty, or otherwise, shall be limited to the total amount paid by you for the specific service giving rise to the claim.",
+        "8.2 Exclusion of Consequential Losses - We shall not be liable for any indirect, consequential, special, or punitive losses or damages, including but not limited to: loss of profits, loss of business, loss of revenue, loss of use, loss of opportunity, cost of replacement services, or any other economic loss, even if we have been advised of the possibility of such losses.",
+        "8.3 Specific Exclusions - We are not liable for: delays in reaching you due to traffic, weather, or other factors beyond our control; pre-existing damage to your vehicle, wheels, wheel studs, or components discovered during our work; damage to locking wheel nuts, wheel studs, or wheels that occurs during removal of seized, rounded, or damaged components (though we will use our best efforts to minimise such damage); TPMS sensor damage when sensors are seized, corroded, or otherwise in poor condition; issues arising from incorrect information provided by you; or manufacturer defects in tyres or parts supplied.",
+        "8.4 Roadside Work - Roadside tyre fitting carries inherent risks that do not exist in a controlled garage environment. By requesting roadside service, you acknowledge these risks. While we take all reasonable precautions, we cannot guarantee the same level of control over environmental factors (weather, road surface, traffic, lighting) as would exist in a fixed location.",
+        "8.5 Nothing in These Terms Excludes - Nothing in these Terms excludes or limits our liability for: death or personal injury caused by our negligence, fraud or fraudulent misrepresentation, or any other liability that cannot be excluded or limited under English law.",
+        
+        "9. CANCELLATIONS AND REFUNDS",
+        "9.1 Your Right to Cancel - You may cancel a booking at any time by contacting us at 0330 133 9311 or contact@tyreemergency.com.",
+        "9.2 Cancellation of Standard Jobs (No Deposit Paid) - For standard emergency call-outs where no deposit has been taken, you may cancel without charge provided you cancel before our technician is dispatched to your location. Once our technician has been dispatched and is en route to you, we reserve the right to charge a call-out fee to cover our costs.",
+        "9.3 Cancellation Where Deposit Has Been Paid - DEPOSITS ARE NON-REFUNDABLE. If you have paid a deposit to secure your booking, that deposit will be forfeited if you cancel for any reason. This policy exists because we allocate resources (technician time, sourced parts, scheduling) immediately upon receiving your deposit, and we incur costs and opportunity costs (inability to accept other work) as a result of that allocation.",
+        "9.4 Our Right to Cancel - We reserve the right to cancel or reschedule appointments in exceptional circumstances including but not limited to: severe weather making travel unsafe, vehicle breakdown, technician illness, or other unforeseen circumstances. If we cancel, we will refund any deposit or payment made in full.",
+        
+        "10. COMPLAINTS AND DISPUTES",
+        "10.1 How to Complain - If you are unhappy with our service, please contact us as soon as possible. Phone: 0330 133 9311. Email: contact@tyreemergency.com. We will investigate your complaint and respond within a reasonable timeframe. We aim to resolve complaints quickly and fairly.",
+        "10.2 Alternative Dispute Resolution - If we cannot resolve your complaint to your satisfaction, you may wish to use an alternative dispute resolution service. We are willing to participate in ADR to resolve disputes where appropriate.",
+        "10.3 Governing Law and Jurisdiction - These Terms are governed by the laws of England and Wales. Any disputes arising from or in connection with these Terms or our services shall be subject to the exclusive jurisdiction of the courts of England and Wales.",
+        
+        "11. DATA PROTECTION AND PRIVACY",
+        "We collect and process personal information in accordance with UK GDPR and the Data Protection Act 2018. For full details of how we handle your personal data, please see our Privacy Policy at https://tyreemergency.com/privacy-policy. We are registered with the Information Commissioner's Office (ICO Registration Number: ZB755609).",
+        
+        "12. GENERAL TERMS",
+        "12.1 Entire Agreement - These Terms, together with our Privacy Policy and Cookie Policy, constitute the entire agreement between you and us regarding the provision of our services and supersede any prior agreements, representations, or understandings.",
+        "12.2 Changes to These Terms - We may update these Terms from time to time. The 'Last Updated' date at the top of this document indicates when changes were last made. Continued use of our services after changes constitutes acceptance of the revised Terms.",
+        "12.3 Severability - If any provision of these Terms is found to be unenforceable or invalid by a court of law, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.",
+        "12.4 Waiver - Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision unless acknowledged in writing by us.",
+        "12.5 Third Party Rights - These Terms are between you and us. No third party has any right to enforce any provision of these Terms.",
+        "12.6 Assignment - You may not assign or transfer your rights or obligations under these Terms without our prior written consent. We may assign our rights and obligations under these Terms to another company or entity without your consent.",
+        "12.7 Contact Us - If you have any questions about these Terms and Conditions, please contact us: Tyre Emergency Ltd, Newark, Nottinghamshire NG22 8GA. Phone: 0330 133 9311. Email: contact@tyreemergency.com. Website: https://tyreemergency.com"
       ]
     }
   },
