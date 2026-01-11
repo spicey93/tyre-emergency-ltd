@@ -1,155 +1,173 @@
 {
   "company": {
-    "name": "Demo Company",
-    "phone": "0123 456 7890",
-    "email": "demo.company@email.co.uk",
-    "vatNo": "123456789",
-    "companyNo": "12345678",
+    "name": "Tyre Emergency Ltd",
+    "phone": "0330 133 9311",
+    "email": "contact@tyreemergency.com",
+    "vatNo": "456597051",
+    "companyNo": "15362025",
+    "showAddress": false,
     "address": {
-      "houseNo": "1",
-      "streetAddress": "Example Road",
-      "city": "City",
-      "county": "County",
-      "postcode": "DE1 1MO",
-      "latitude": 13432,
-      "longitude": 32432
+      "houseNo": "",
+      "streetAddress": "",
+      "city": "Newark",
+      "county": "Nottinghamshire",
+      "postcode": "NG22 8GA",
+      "latitude": "",
+      "longitude": ""
     },
     "map": "https://www.google.com/maps/d/embed?mid=1wN_heDE1bt2DEpdjRAO18EqOqTbSlx4&ehbc=2E312F",
     "openingHours": {
       "monday": {
-        "opens": "09:00",
-        "closes": "17:00"
+        "opens": "06:00",
+        "closes": "18:00"
       },
       "tuesday": {
-        "opens": "09:00",
-        "closes": "17:00"
+        "opens": "06:00",
+        "closes": "18:00"
       },
       "wednesday": {
-        "opens": "09:00",
-        "closes": "17:00"
+        "opens": "06:00",
+        "closes": "18:00"
       },
       "thursday": {
-        "opens": "09:00",
-        "closes": "17:00"
+        "opens": "06:00",
+        "closes": "18:00"
       },
       "friday": {
-        "opens": "09:00",
-        "closes": "17:00"
+        "opens": "06:00",
+        "closes": "18:00"
       },
       "saturday": {
-        "opens": "09:00",
-        "closes": "13:00"
+        "opens": "06:00",
+        "closes": "18:00"
       },
       "sunday": {
-        "opens": "00:00",
-        "closes": "00:00"
+        "opens": "06:00",
+        "closes": "18:00"
       }
     },
-    "description": "A brief description about Demo Company and what service they provide.",
-    "website": "https://democompany.co.uk"
+    "description": "Fast response emergency roadside tyre replacement across Nottinghamshire. We get to you quickly, keep you informed, and get the job done right. Covering Mansfield, Newark, Worksop, Retford and surrounding areas.",
+    "website": "https://tyreemergency.com"
   },
   "marketing": {
     "features": [
-      { "text": "Feature #1", "icon": "check-circle-fill" },
-      { "text": "Feature #2", "icon": "check-circle-fill" },
-      { "text": "Feature #3", "icon": "check-circle-fill" }
+      { "text": "30-60 Minute Response Time", "icon": "clock-fill" },
+      { "text": "Open 7 Days a Week", "icon": "calendar-check-fill" },
+      { "text": "Over 400 Five Star Reviews", "icon": "star-fill" }
     ],
     "testimonials": [
       {
-        "name": "John Smith",
-        "location": "London",
+        "name": "Emma Richards",
+        "location": "Newark",
         "rating": 5,
-        "text": "Absolutely brilliant service! They came to my work and fitted new tyres while I was in a meeting. Saved me so much time and hassle."
+        "text": "Brilliant service! Got a flat tyre on my way to an important meeting and they were with me in 30 minutes. Professional, friendly, and saved the day. Can't recommend them enough!"
       },
       {
-        "name": "Sarah Johnson",
-        "location": "Manchester",
+        "name": "Tom Harrison",
+        "location": "Mansfield",
         "rating": 5,
-        "text": "Had a flat tyre emergency and they arrived within 30 minutes. Professional, friendly, and great prices. Highly recommend!"
+        "text": "Best tyre service I've ever used. Came to my house while I was working from home, fitted new tyres in no time, and the price was very fair. No more wasting half a day at a garage!"
       },
       {
-        "name": "Mike Williams",
-        "location": "Birmingham",
+        "name": "Lisa Thompson",
+        "location": "Worksop",
         "rating": 5,
-        "text": "Great mobile service. No more waiting around at garages. The technician was knowledgeable and explained everything clearly."
+        "text": "Had an emergency on the A1 and these guys were absolute lifesavers. Quick response, sorted my locking wheel nut problem on the spot, and got me back on the road safely. 5 stars all the way!"
       }
     ]
   },
   "areas": [
     {
-      "name": "London",
-      "localInformation": "London is the capital and largest city of the United Kingdom. Our mobile tyre fitting service covers all of Greater London, providing convenient roadside and on-site tyre services across the city and surrounding areas. We operate throughout London's diverse neighbourhoods, from central London to the outer boroughs.",
+      "name": "Newark",
+      "localInformation": "Newark-on-Trent is a historic market town in Nottinghamshire, known for its castle and strategic location. Our mobile tyre fitting service is based in Newark and covers the town and all surrounding villages. We provide rapid emergency response and convenient mobile tyre services throughout the Newark area, from roadside assistance to home and workplace fitting.",
       "nearby": [
-        "Central London",
-        "North London",
-        "South London",
-        "East London",
-        "West London",
-        "Greater London"
+        "Balderton",
+        "Fernwood",
+        "Coddington",
+        "Collingham",
+        "Southwell",
+        "Bingham",
+        "Ollerton"
       ],
-      "postcodes": ["SW1A", "EC1A", "W1A", "NW1", "SE1", "E1", "N1", "W1"]
+      "postcodes": ["NG22", "NG23", "NG24"]
     },
     {
-      "name": "Manchester",
-      "localInformation": "Manchester is a major city in the North West of England and a centre of industrial, commercial, financial, and cultural achievement. Our mobile tyre fitting service operates across Greater Manchester, serving the city centre and all surrounding areas. We provide rapid response times for emergency tyre repairs and regular maintenance services.",
+      "name": "Worksop",
+      "localInformation": "Worksop is a market town in the Bassetlaw district of Nottinghamshire, close to the border with South Yorkshire. Our mobile tyre service covers Worksop and the surrounding areas with fast response times. Whether you need emergency tyre assistance or scheduled mobile fitting at your home or workplace, we're here to help.",
       "nearby": [
-        "City Centre",
-        "Salford",
-        "Stockport",
-        "Oldham",
-        "Rochdale",
-        "Tameside",
-        "Trafford"
+        "Shireoaks",
+        "Carlton in Lindrick",
+        "Rhodesia",
+        "Manton",
+        "Kilton",
+        "Langold",
+        "Clowne"
       ],
-      "postcodes": ["M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9"]
+      "postcodes": ["S80", "S81"]
     },
     {
-      "name": "Birmingham",
-      "localInformation": "Birmingham is the second-largest city in the United Kingdom, located in the heart of England. Our mobile tyre fitting service covers Birmingham and the surrounding West Midlands region, offering comprehensive tyre services including fitting, repairs, and emergency roadside assistance throughout the city.",
+      "name": "Mansfield",
+      "localInformation": "Mansfield is a market town and the main administrative centre in Mansfield District, Nottinghamshire. Our mobile tyre fitting service operates throughout Mansfield and the surrounding areas, providing convenient and professional tyre services. From emergency call-outs to scheduled appointments, we bring the garage to you across Mansfield and beyond.",
       "nearby": [
-        "City Centre",
-        "Solihull",
-        "Dudley",
-        "Wolverhampton",
-        "Coventry",
-        "Sutton Coldfield",
-        "Sandwell"
+        "Mansfield Woodhouse",
+        "Forest Town",
+        "Clipstone",
+        "Rainworth",
+        "Sutton-in-Ashfield",
+        "Kirkby-in-Ashfield",
+        "Warsop"
       ],
-      "postcodes": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9"]
+      "postcodes": ["NG18", "NG19", "NG20", "NG21"]
+    },
+    {
+      "name": "Retford",
+      "localInformation": "Retford (East Retford) is a market town in the Bassetlaw district of Nottinghamshire, situated on the River Idle. Our mobile tyre service covers Retford and all surrounding villages with reliable, fast response times. Whether you're in the town centre or surrounding rural areas, we provide professional mobile tyre fitting and emergency assistance wherever you need us.",
+      "nearby": [
+        "Ordsall",
+        "Clarborough",
+        "Welham",
+        "Grove",
+        "Bolham",
+        "Eaton",
+        "Gamston"
+      ],
+      "postcodes": ["DN22"]
     }
   ],
   "social": {
-    "facebook": "https://www.facebook.com/demo-company",
-    "instagram": "https://www.instagram.com/democompany",
-    "youtube": "https://www.youtube.com/@DemoCompany",
-    "googleMyBusiness": "https://maps.google.com/?q=Demo+Company"
+    "facebook": "https://www.facebook.com/tyreemergencyltd",
+    "instagram": "https://www.instagram.com/tyreemergencyltd/",
+    "youtube": "https://www.youtube.com/@TyreEmergencyLtd",
+    "googleMyBusiness": "https://share.google/p3hK2J8INUjzdzcZL"
   },
   "pages": {
     "home": {
       "pageTitle": "Home",
-      "description": "Professional tyre fitting service - mobile service that comes to you OR visit our depot. Expert technicians, quality tyres, and flexible service at your home, workplace, or our fully equipped facility. Book today!",
-      "heroHeading": "Expert Tyre Services - Mobile or at Our Depot",
-      "heroSubheading": "Choose what suits you best! Mobile tyre fitting at your location OR visit our fully equipped depot. Same-day service available with competitive prices and quality tyres.",
-      "mainHeading": "Your Tyre Service Experts",
+      "description": "Emergency roadside tyre replacement across Nottinghamshire. Fast 30-60 minute response, 7 days a week. We come to you - home, work, or roadside. Over 400 five-star reviews. Covering Newark, Mansfield, Worksop, and Retford.",
+      "heroHeading": "Stuck With a Flat? We'll Be There in 30-60 Minutes",
+      "heroSubheading": "Emergency roadside tyre replacement across Nottinghamshire. 7 days a week, 6am to 6pm.",
+      "mainHeading": "Emergency Tyre Service That Actually Shows Up",
       "mainContent": [
-        "We offer the flexibility you need! Choose our mobile tyre fitting service and we'll come to your home, workplace, or even the roadside if you're stuck. Or visit our fully equipped depot for fast, professional service with all the facilities of a traditional garage. Whether mobile or at our depot, our expert technicians provide the same high-quality service using professional-grade equipment.",
-        "We offer a complete range of tyre services including mobile tyre fitting, emergency call-outs, puncture repairs at our depot, wheel balancing, TPMS servicing, alloy wheel repairs, and much more. With competitive pricing, same-day appointments when available, and a huge selection of premium and budget tyres, we make it easy to keep your vehicle safe and roadworthy.",
-        "All our technicians are fully trained, insured, and use professional equipment to ensure every job is done right. We pride ourselves on honest advice, transparent pricing, and friendly service. From cars to caravans, mobile services to depot-based repairs, we've got you covered. Ready to book? Get in touch for a free quote today!"
+        "Getting stuck with a flat tyre is stressful - you're on a busy road, running late, and the last thing you need is waiting hours for help. That's why we built Tyre Emergency Ltd around one simple idea: get to you as quickly as possible and sort it out properly. We're talking 30-60 minute response times across Nottinghamshire, not vague 'within 4 hours' promises. Our vans are stocked with tyres for most vehicles, so we show up ready to fix your problem, not just assess it.",
+        "What makes us different? Clear communication throughout. We share our live location with you so you know exactly when we'll arrive - no guesswork, no endless waiting. Transparent pricing with no hidden fees or surprise charges. Our technicians are experienced professionals with the tools and know-how to handle locking wheel nuts and TPMS sensors on the spot. We've earned over 400 five-star reviews on Google by being reliable, honest, and genuinely helpful when people need us most.",
+        "We cover Newark, Mansfield, Worksop, Retford, and all the surrounding areas. Open 7 days a week from 6am to 6pm - tyre emergencies don't respect weekends or bank holidays. We work with cars, vans, caravans, motorhomes, trailers, and SUVs. Need help now? Call us on 0330 133 9311 and we'll be on our way."
       ]
     },
     "about": {
       "pageTitle": "About",
-      "description": "Description for the about page",
+      "description": "Meet Tyre Emergency Ltd - Nottinghamshire's emergency roadside tyre specialists. Fast response times, honest pricing, and over 400 five-star reviews. Based in Newark, serving all of Nottinghamshire.",
       "mainContent": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis tempore aperiam omnis iusto natus iste, veniam ea doloremque dolor fugit quis non culpa doloribus vero possimus temporibus magnam et!"
+        "Being stuck on the side of the road is stressful. You're surrounded by traffic, running late, and you just want someone to show up and sort it out. That's exactly why we started Tyre Emergency Ltd - to provide fast response tyre replacement when you need it most. Our goal is simple: get to you quickly, keep you informed, and get the job done properly so you can get back on the road safely.",
+        "We've built the entire business around efficiency. Tyres are stored close to our technicians so we're not wasting time collecting stock. We share our live location during call-outs so you know exactly when we'll arrive. Our pricing is transparent with no hidden fees. And our technicians have the tools on board to handle locking wheel nuts and TPMS sensor issues on the spot.",
+        "Founded by Dean Spicer, who's been in the tyre trade since the age of 20. Born in Dorset and spent years working for large national chains and smaller family businesses - both mobile and depot work. That experience taught what good service looks like and what frustrates customers. The result? A business focused on quick response times, clear communication, fair pricing, and getting people back on the road without the drama.",
+        "We work with cars, vans, caravans, motorhomes, trailers, and SUVs. We're typically only 30 minutes away from major towns across Newark, Mansfield, Worksop, Retford, and surrounding areas. Open 7 days a week from 6am to 6pm. We've earned over 400 five-star reviews on Google from genuine customers who needed help and got the service they deserved.",
+        "Need emergency tyre assistance? Call us on 0330 133 9311 or email contact@tyreemergency.com. We'll be on our way while you're still on the phone."
       ]
     },
     "services": [
       {
         "mobileTyreFitting": {
-          "isProvided": true,
+          "isProvided": false,
           "pageTitle": "Mobile Tyre Fitting",
           "description": "We bring the garage to you! Expert mobile tyre fitting at your home, workplace, or roadside. No queues, no waiting - just great service at your convenience.",
           "heroHeading": "Mobile Tyre Fitting",
@@ -160,6 +178,54 @@
             "Picture this: You're at home having breakfast while we fit your tyres in the driveway. Or you're finishing up that meeting while we're sorting your vehicle in the car park. That's the beauty of mobile tyre fitting - your tyres get done while your life carries on as normal. We stock premium brands and budget-friendly options for every vehicle type, all fitted to manufacturer specifications with professional wheel balancing, TPMS resets, and free old tyre disposal included.",
             "Our mobile vans aren't just vehicles - they're fully equipped tyre centres on wheels. We use the same professional-grade equipment as traditional garages, so you're never compromising on quality for convenience. The difference? You're in control. No more sitting around wondering when your car will be ready. You choose the time, you choose the place, and we do the rest while you get on with what matters to you.",
             "Every technician on our team is fully qualified, insured, and committed to keeping you safe on the road. We believe in transparent pricing - no hidden fees, no surprises, just honest quotes before we start any work. Need tyres today? We offer same-day service across our coverage area. Ready to experience the smarter way to get tyres fitted? Get your free quote now and discover why our customers never go back to traditional garages."
+          ]
+        }
+      },
+      {
+        "emergencyMobileTyreFitting": {
+          "isProvided": true,
+          "pageTitle": "Emergency Mobile Tyre Fitting",
+          "description": "Stranded with a flat tyre? Fast emergency roadside tyre replacement across Nottinghamshire. 30-60 minute response time, 7 days a week. We come to you with tyres in stock, ready to get you moving.",
+          "heroHeading": "Emergency Tyre Replacement",
+          "heroSubheading": "Stuck With a Flat Tyre? We'll Get to You Fast - 30-60 Minute Response Across Nottinghamshire",
+          "mainHeading": "Emergency Roadside Tyre Service",
+          "mainContent": [
+            "Flat tyre on a busy road? Blowout on the way to work? Don't panic. This is exactly what we do. Tyre Emergency Ltd specializes in fast response emergency tyre replacement across Nottinghamshire. We're talking 30-60 minute response times, not vague 'we'll be there eventually' promises. One call to us and we're on our way - fully stocked van, experienced technician, and the tools to get you back on the road safely and quickly.",
+            "What sets us apart is how we've built the business around efficiency. Tyres are stored close to our fitters, so we're not wasting time driving around collecting stock. We share our live location with you during the callout, so you know exactly where we are and when we'll arrive - no guesswork, no endless waiting. Our vans carry tyres for most vehicles, so chances are we'll have what you need on board. If not, we'll source it fast. And our technicians have the experience and equipment to handle tricky situations like seized locking wheel nuts and TPMS sensor issues right there at the roadside.",
+            "We operate 7 days a week from 6am to 6pm because tyre emergencies don't wait for Monday morning. Sunday afternoon blowout? Saturday morning flat before your holiday? We're available. We cover Newark, Mansfield, Worksop, Retford, and all the surrounding areas in Nottinghamshire - typically only 30 minutes away from major towns. We work with cars, vans, caravans, motorhomes, trailers, and SUVs. Clear, transparent pricing before we start work - no hidden 'emergency' fees or surprise charges when you're already stressed.",
+            "It's stressful being stranded on a busy road. We get that. That's why we've earned over 400 five-star reviews on Google - not by being the cheapest, but by showing up quickly, keeping people informed, and sorting the problem properly so they can get on with their day. Need emergency tyre help now? Call 0330 133 9311 and we'll be on our way while you're still on the phone."
+          ]
+        }
+      },
+      {
+        "lockingWheelNutRemoval": {
+          "isProvided": true,
+          "pageTitle": "Locking Wheel Nut Removal",
+          "description": "Lost your locking wheel nut key? We provide professional mobile locking wheel nut removal across Nottinghamshire. Safe removal using specialist tools with no damage to your wheels. We come to you.",
+          "heroHeading": "Locking Wheel Nut Removal",
+          "heroSubheading": "Lost Your Locking Wheel Nut Key? We'll Sort It - Mobile Service With Specialist Tools",
+          "mainHeading": "Mobile Locking Wheel Nut Removal",
+          "mainContent": [
+            "You need a tyre changed. Then you realize the locking wheel nut key is missing. Check the glovebox - not there. Check the boot - nothing. Now what? Most places either can't help or charge extortionate prices. We've got the solution: mobile locking wheel nut removal across Nottinghamshire using specialist tools that won't damage your alloys. We've removed thousands of locking wheel nuts over the years, and we can remove yours too - at your home, workplace, or roadside.",
+            "Locking wheel nuts are designed to be secure, which makes them tricky to remove without the key. But we're equipped for this. We carry specialist locking wheel nut removal tools on our vans - proper professional kit designed for the job, not hammers and chisels that destroy your expensive alloy wheels. Our technicians have the experience to remove seized, rounded, or locked wheel nuts safely without damaging your wheels, studs, or vehicle. We deal with this regularly, so what seems like a major problem to you is just another job we know how to handle properly.",
+            "The beauty of our mobile service? We come to you. No need to get your car recovered to a garage at ridiculous expense. No taking time off work to sit in a waiting room. We'll come to your location with the specialist tools needed, remove the locking wheel nuts safely, and if you need tyres fitted at the same time, we can do that immediately - our vans are fully stocked. Or we can simply replace the locking nuts with standard ones so you never have this hassle again. Your choice.",
+            "Operating 7 days a week across Newark, Mansfield, Worksop, Retford, and all of Nottinghamshire. Transparent pricing with no hidden fees - we'll quote you honestly before we start. Most locking wheel nut removals are done quickly without fuss or drama. Need locking wheel nuts removed? Call us on 0330 133 9311 and we'll handle it properly without damaging your wheels."
+          ]
+        }
+      },
+      {
+        "tpms": {
+          "isProvided": true,
+          "pageTitle": "TPMS Service",
+          "description": "Professional mobile TPMS service across Nottinghamshire. Tyre pressure sensor diagnostics, replacement, and programming. Keep your warning light off and your tyres monitored properly.",
+          "heroHeading": "TPMS Service",
+          "heroSubheading": "Warning Light On Your Dashboard? We'll Sort Your TPMS Sensors - Mobile Service Across Nottinghamshire",
+          "mainHeading": "TPMS (Tyre Pressure Monitoring System) Service",
+          "mainContent": [
+            "That tyre pressure warning light glowing on your dashboard? It's not going away on its own. Modern vehicles have TPMS (Tyre Pressure Monitoring System) sensors that alert you when tyre pressure drops below safe levels. When that light comes on - or stays on after you've had new tyres fitted - you need proper TPMS service. We handle TPMS diagnostics, sensor replacement, and programming across Nottinghamshire, and we come to you. No garage visit needed.",
+            "TPMS isn't just about turning off an annoying light. These sensors are important safety equipment that monitor your tyre pressure in real-time, warning you of dangerous pressure loss before it causes problems. Our mobile vans carry TPMS diagnostic equipment and replacement sensors for most vehicle makes. We can diagnose faulty sensors, replace failed ones, program new sensors to your vehicle's system, and reset everything so it works properly. Whether it's one sensor or a full set, we'll sort it at your location.",
+            "We deal with TPMS regularly: faulty sensor diagnostics, replacement of failed or damaged sensors, programming new sensors to your vehicle, sensor valve replacement, and fixing intermittent TPMS warnings. We can source manufacturer-specific sensors or quality universal programmable sensors that work just as well at better prices. If you're having new tyres fitted, we'll check and service your TPMS sensors at the same time - one visit, everything sorted properly.",
+            "Operating 7 days a week across Newark, Mansfield, Worksop, Retford, and all of Nottinghamshire. Transparent pricing with no hidden fees, and we'll only replace what actually needs replacing - no unnecessary upselling. Don't ignore that warning light - it's there for your safety. Call us on 0330 133 9311 and we'll get your TPMS working properly again."
           ]
         }
       }

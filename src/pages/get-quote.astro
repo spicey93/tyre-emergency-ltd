@@ -8,11 +8,11 @@ import { company } from "../data/config.json";
 import { groupOpeningHours } from "../utils/openingHours";
 import { formatAddress } from "../utils/format";
 
-const { phone, email, address, openingHours } = company;
+const { phone, email, address, openingHours, showAddress = true } = company;
 const pageTitle = "Get Quote";
 
 const groupedHours = groupOpeningHours(openingHours);
-const formattedAddress = formatAddress(address, { separator: ", " });
+const formattedAddress = showAddress ? formatAddress(address, { separator: ", " }) : null;
 
 ---
 
@@ -31,7 +31,9 @@ const formattedAddress = formatAddress(address, { separator: ", " });
       <div class="col-lg-6 order-lg-1">
         <ContactInfo icon="telephone-fill" title="Phone" text={phone} />
         <ContactInfo icon="envelope-fill" title="Email" text={email} />
-        <ContactInfo icon="map-fill" title="Find Us" text={formattedAddress} />
+        {showAddress && formattedAddress && (
+          <ContactInfo icon="map-fill" title="Find Us" text={formattedAddress} />
+        )}
         <ContactInfo icon="clock-fill" title="Opening Hours">
           {
             groupedHours.map((group) => (

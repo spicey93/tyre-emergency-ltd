@@ -6,7 +6,7 @@ import { company } from "../data/config.json";
 import { formatPhoneForLink } from "../utils/format";
 import { quickLinks } from "../utils/navigation";
 
-const { name, phone, email, address, description, vatNo, companyNo } = company;
+const { name, phone, email, address, description, vatNo, companyNo, showAddress = true } = company;
 const year = new Date().getFullYear();
 ---
 
@@ -34,7 +34,7 @@ const year = new Date().getFullYear();
 
       <div class="col-md-4">
         <h6 class="text-white mb-3">Contact</h6>
-        <Address address={address} />
+        {showAddress && <Address address={address} />}
         <div class="small mt-2">
           <a
             href={`tel:${formatPhoneForLink(phone)}`}

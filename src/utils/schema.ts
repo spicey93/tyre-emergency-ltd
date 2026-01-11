@@ -3,6 +3,7 @@ interface Company {
   name: string;
   phone: string;
   website: string;
+  showAddress?: boolean;
   address: {
     houseNo: string;
     streetAddress: string;
@@ -49,18 +50,20 @@ export function generateLocalBusinessSchema(company: Company, social: Social) {
     "@id": "",
     "url": company.website,
     "telephone": company.phone,
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": `${company.address.houseNo} ${company.address.streetAddress}`,
-      "addressLocality": company.address.county || company.address.city,
-      "postalCode": company.address.postcode,
-      "addressCountry": "GB"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": company.address.latitude,
-      "longitude": company.address.longitude
-    },
+    ...(company.showAddress !== false && company.address.houseNo && company.address.streetAddress ? {
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": `${company.address.houseNo} ${company.address.streetAddress}`,
+        "addressLocality": company.address.county || company.address.city,
+        "postalCode": company.address.postcode,
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": company.address.latitude,
+        "longitude": company.address.longitude
+      }
+    } : {}),
     "openingHoursSpecification": openingHoursSpec,
     "sameAs": sameAs
   };
