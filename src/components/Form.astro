@@ -1,10 +1,15 @@
 ---
 import { pages } from "../data/config.json";
-// Get services from config
-const servicesConfig = pages.services[0];
-const availableServices = Object.entries(servicesConfig)
-  .filter(([_, service]) => service.isProvided)
-  .map(([key, service]) => ({
+// Get services from config - flatten the array of service objects
+const availableServices = pages.services
+  .flatMap((serviceGroup) => 
+    Object.entries(serviceGroup).map(([key, service]) => ({
+      key,
+      service,
+    }))
+  )
+  .filter(({ service }) => service.isProvided)
+  .map(({ key, service }) => ({
     value: key,
     label: service.pageTitle,
   }));
