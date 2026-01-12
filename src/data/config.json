@@ -236,7 +236,7 @@
       "mainContent": [
         "1. INTRODUCTION",
         "This Cookie Policy explains how Tyre Emergency Ltd ('we', 'us', 'our') uses cookies and similar technologies on our website https://tyreemergency.com. This policy should be read alongside our Privacy Policy, which provides more information about how we collect and use personal data.",
-        "By using our website, you consent to the use of cookies in accordance with this Cookie Policy. If you do not agree with our use of cookies, you should change your browser settings accordingly or stop using our website.",
+        "By using our website, you consent to the use of essential cookies that are necessary for the website to function. For non-essential cookies such as analytics cookies (Google Analytics via Google Tag Manager), we will ask for your consent through our cookie consent banner. If you do not agree with our use of cookies, you should change your browser settings accordingly or stop using our website.",
         "Company Details: Tyre Emergency Ltd, Newark, Nottinghamshire NG22 8GA. Company Number: 15362025. VAT Number: 456597051. ICO Registration: ZB755609. Phone: 0330 133 9311. Email: contact@tyreemergency.com. Website: https://tyreemergency.com",
         "Last Updated: 11 January 2026",
         
@@ -246,7 +246,7 @@
         "In addition to traditional cookies, we also use similar technologies such as browser local storage, which stores data locally in your browser similar to cookies but with different technical characteristics.",
         
         "3. WHY WE USE COOKIES",
-        "We use cookies and similar technologies for the following reasons: to remember your cookie consent preferences, to protect our website forms from spam and abuse, to enable essential website functionality, and to improve your experience on our website. We do not currently use cookies for analytics, advertising, or marketing purposes.",
+        "We use cookies and similar technologies for the following reasons: to remember your cookie consent preferences, to protect our website forms from spam and abuse, to enable essential website functionality, to analyze how visitors use our website through Google Analytics (with your consent), and to improve your experience on our website. We do not use cookies for advertising or marketing purposes.",
         
         "4. COOKIES WE USE",
         "Our website uses minimal tracking technologies. We are committed to transparency about what we use and why.",
@@ -263,24 +263,31 @@
         
         "Netlify Forms - Purpose: Netlify processes our website forms and may set cookies for form functionality, session management, and spam prevention. Provider: Netlify, Inc. Cookies set: May include session cookies for form processing. Duration: Varies (typically session cookies). Category: Functional (required for form submission). Legal basis: Legitimate interest (processing your quote requests). Privacy policy: https://www.netlify.com/privacy/.",
         
-        "4.3 OPTIONAL THIRD-PARTY SERVICES",
+        "4.3 ANALYTICS AND TRACKING COOKIES (THIRD-PARTY)",
+        "These cookies help us understand how visitors use our website so we can improve user experience and website performance.",
+        
+        "Google Analytics and Google Tag Manager - Purpose: We use Google Analytics (via Google Tag Manager) to track and analyze website traffic, user behavior, and website performance. This helps us understand which pages are most popular, how users navigate our site, and where improvements can be made. Provider: Google LLC. Cookies set: Google Analytics sets various cookies including _ga, _ga_*, _gid, and _gat. These cookies collect information such as pages visited, time spent on pages, traffic sources, device and browser information, and general location data (city/region level, not precise location). Duration: Varies by cookie - some are session cookies, others persist for up to 2 years. Category: Analytics / Performance. Legal basis: Consent (you can opt out via our cookie consent banner). Privacy policy: https://policies.google.com/privacy. Data retention: We have configured Google Analytics to retain data for 14 months. Opt-out: You can opt out by adjusting your cookie preferences in our cookie banner, using browser settings, or installing the Google Analytics Opt-out Browser Add-on at https://tools.google.com/dlpage/gaoptout.",
+        
+        "Important Note About Google Analytics: The data collected by Google Analytics is used solely to improve our website and understand our audience. We do NOT use Google Analytics data for advertising or remarketing purposes. Google may use this data for its own purposes as described in their privacy policy.",
+        
+        "4.4 OPTIONAL THIRD-PARTY SERVICES",
         "Elfsight Widgets - Purpose: We may use Elfsight widgets to display reviews or other interactive content on our website. If Elfsight widgets are present, they may set cookies for functionality and analytics. Provider: Elfsight. Cookies set: Various cookies for widget functionality. Duration: Varies. Category: Functional / Analytics (depending on the specific widget). Legal basis: Consent or legitimate interest. Privacy policy: https://elfsight.com/privacy-policy/. Current status: Elfsight widgets may or may not be active on the site at any given time.",
         
-        "4.4 COOKIES WE DO NOT USE",
-        "We want to be clear about what we do NOT use: Google Analytics - We do not currently use Google Analytics or any other analytics platform to track website visitors. Google Tag Manager - We do not use Google Tag Manager. Facebook Pixel or Social Media Tracking - We do not use Facebook Pixel, LinkedIn Insight Tag, or any social media tracking pixels. Advertising Cookies - We do not use any advertising or remarketing cookies. Marketing Automation - We do not use marketing automation platforms that track your behavior across visits.",
-        "Our website has minimal tracking compared to most modern websites. We only use what is necessary to operate our service and protect our forms from spam.",
+        "4.5 COOKIES WE DO NOT USE",
+        "We want to be clear about what we do NOT use: Facebook Pixel or Social Media Tracking - We do not use Facebook Pixel, LinkedIn Insight Tag, or any social media tracking pixels. Advertising or Remarketing Cookies - We do not use Google Ads remarketing, Facebook Ads, or any other advertising cookies that follow you around the web. Marketing Automation - We do not use marketing automation platforms that track your behavior across visits.",
+        "While we do use Google Analytics for understanding website traffic, we do not use it for advertising purposes. Our tracking is limited to improving user experience and website performance.",
         
         "5. HOW TO CONTROL AND DELETE COOKIES",
         "5.1 Browser Settings - Most web browsers allow you to control cookies through their settings. You can set your browser to: refuse all cookies, accept only certain cookies, delete cookies when you close your browser, or notify you when a website tries to place a cookie.",
         "Here's how to manage cookies in common browsers: Google Chrome - Settings > Privacy and security > Cookies and other site data. Mozilla Firefox - Settings > Privacy & Security > Cookies and Site Data. Microsoft Edge - Settings > Cookies and site permissions > Cookies and site data. Safari - Preferences > Privacy > Cookies and website data. For mobile browsers, consult your device's help documentation.",
         
-        "5.2 Disabling Specific Cookies - To disable Google reCAPTCHA: Note that disabling reCAPTCHA cookies will prevent you from submitting our quote form. You can contact us directly by phone (0330 133 9311) or email (contact@tyreemergency.com) instead. To disable Netlify cookies: Blocking Netlify cookies may prevent form submission. Again, you can contact us directly by alternative methods.",
+        "5.2 Disabling Specific Cookies - To disable Google Analytics: You can opt out of Google Analytics by adjusting your cookie preferences in our cookie consent banner when you first visit the site. You can also install the Google Analytics Opt-out Browser Add-on available at https://tools.google.com/dlpage/gaoptout. To disable Google reCAPTCHA: Note that disabling reCAPTCHA cookies will prevent you from submitting our quote form. You can contact us directly by phone (0330 133 9311) or email (contact@tyreemergency.com) instead. To disable Netlify cookies: Blocking Netlify cookies may prevent form submission. Again, you can contact us directly by alternative methods.",
         
         "5.3 Clearing Your Browser Data - You can delete all cookies and local storage from your browser at any time: Chrome - Settings > Privacy and security > Clear browsing data > Cookies and other site data. Firefox - Settings > Privacy & Security > Cookies and Site Data > Clear Data. Edge - Settings > Privacy, search, and services > Clear browsing data > Cookies and other site data. Safari - Preferences > Privacy > Manage Website Data > Remove All.",
         "Note that clearing cookies will also delete your cookie consent preference, so you may see our cookie banner again on your next visit.",
         
-        "5.4 Impact of Disabling Cookies - If you disable or refuse cookies: You may not be able to submit our quote form (you can still contact us by phone or email). You will see our cookie consent banner on every visit if you clear localStorage. Essential website functionality should still work. You will not be able to use any interactive widgets that rely on cookies.",
-        "Our website is designed to work with minimal cookies, so disabling cookies should not significantly impact your experience, provided you use alternative contact methods.",
+        "5.4 Impact of Disabling Cookies - If you disable or refuse cookies: You may not be able to submit our quote form (you can still contact us by phone or email). You will see our cookie consent banner on every visit if you clear localStorage. Essential website functionality should still work. You will not be able to use any interactive widgets that rely on cookies. If you disable analytics cookies (Google Analytics), we won't be able to track your visit for website improvement purposes, but this will not affect your ability to use the website.",
+        "Our website is designed to work with minimal cookies, so disabling non-essential cookies should not significantly impact your experience, provided you use alternative contact methods if needed.",
         
         "6. THIRD-PARTY WEBSITES",
         "Our website contains links to third-party websites, including social media platforms (Facebook, Instagram, YouTube) and Google My Business. These websites have their own cookie policies that are independent of ours. We are not responsible for the cookies or privacy practices of third-party websites. We recommend reviewing the cookie policies of any third-party websites you visit from our site.",
@@ -360,8 +367,8 @@
         "You can also submit a complaint online through the ICO's website. We would appreciate the opportunity to resolve any concerns before you contact the ICO, so please contact us first if possible.",
         
         "12. COOKIES AND TRACKING TECHNOLOGIES",
-        "Our website uses minimal tracking technologies. For full details about cookies and similar technologies we use, please see our Cookie Policy at https://tyreemergency.com/cookie-policy.",
-        "In summary, we use: localStorage to remember your cookie consent preference, Google reCAPTCHA (which may set cookies for bot detection), and Netlify Forms (which may set cookies for form functionality). We do not currently use analytics cookies, advertising cookies, or other marketing tracking technologies.",
+        "Our website uses cookies and similar technologies for essential functionality and analytics. For full details about cookies and similar technologies we use, please see our Cookie Policy at https://tyreemergency.com/cookie-policy.",
+        "In summary, we use: localStorage to remember your cookie consent preference, Google Analytics (via Google Tag Manager) to track website usage and improve user experience (with your consent), Google reCAPTCHA (which may set cookies for bot detection), and Netlify Forms (which may set cookies for form functionality). We do not use advertising cookies or marketing tracking technologies for remarketing purposes.",
         
         "13. LINKS TO OTHER WEBSITES",
         "Our website may contain links to third-party websites, such as our social media profiles (Facebook, Instagram, YouTube) or Google My Business. We are not responsible for the privacy practices or content of these external sites. We encourage you to read the privacy policies of any third-party websites you visit.",
@@ -388,11 +395,11 @@
         
         "2. SERVICES PROVIDED",
         "2.1 Service Description - We provide emergency mobile tyre fitting services across Nottinghamshire, including tyre replacement, locking wheel nut removal, and TPMS (Tyre Pressure Monitoring System) diagnostics and repair. Our services are delivered at your location, whether at home, workplace, or roadside.",
-        "2.2 Coverage Areas - We operate in the following primary areas: Newark (postcodes: NG22, NG23, NG24), Mansfield (postcodes: NG18, NG19, NG20, NG21), Worksop (postcodes: S80, S81), and Retford (postcodes: DN22). We may provide services outside these areas at our discretion. Additional charges may apply for locations outside our standard service area, and deposits may be required (see Section 4).",
-        "2.3 Operating Hours - We operate 7 days a week, Monday to Sunday: 6:00 AM - 6:00 PM. Emergency call-outs are available during these hours only. We do not operate outside these hours except in exceptional circumstances and by prior arrangement.",
+        "2.2 Coverage Areas and Fees - We operate in the following primary areas: Newark (postcodes: NG22, NG23, NG24), Mansfield (postcodes: NG18, NG19, NG20, NG21), Worksop (postcodes: S80, S81), and Retford (postcodes: DN22). Fees are applied to all mobile services, with specific charges for each postcode region. Our maximum service radius is 30 miles. We may provide services outside these areas at our discretion. Additional charges may apply for locations outside our standard service area, and deposits may be required in certain situations (see Section 4).",
+        "2.3 Operating Hours - We operate 7 days a week, Monday to Sunday: 6:00 AM - 6:00 PM. Emergency call-outs are available during these hours. We do operate outside these hours, but an additional out of hours fee will be applied.",
         
         "3. RESPONSE TIMES AND SERVICE AVAILABILITY",
-        "3.1 Target Response Times - We aim to respond to emergency call-outs within 30-60 minutes of receiving your call during our operating hours. This is a target response time and not a guaranteed service level.",
+        "3.1 Target Response Times and ETA - We aim to respond to emergency call-outs within 30-60 minutes of receiving your call during our operating hours. We will provide an ETA (Estimated Time of Arrival) during the quote process. This is an estimate, not a guarantee.",
         "3.2 No Guarantee of Response Time - Response times are subject to factors beyond our control, including but not limited to: traffic conditions, weather, distance to your location, technician availability, and volume of simultaneous call-outs. We will always endeavour to reach you as quickly as possible, but we cannot guarantee specific arrival times.",
         "3.3 Service Refusal - We reserve the right to refuse service in circumstances including but not limited to: unsafe working conditions, threatening or abusive behaviour, locations that are inaccessible or unsafe for our technicians, or situations where we determine we cannot complete the work safely and professionally.",
         
@@ -400,7 +407,7 @@
         "4.1 Quotations - We provide quotations based on the information you provide about your vehicle and required services. All quotations are estimates and may be subject to change if the actual work required differs from the information provided. We will inform you of any price changes before commencing work.",
         "4.2 Standard Payment Terms - For standard emergency call-outs within our primary service areas, payment is due in full upon completion of the work. We will not release your vehicle or leave the site until payment has been received in full.",
         "4.3 Deposit Requirements - We may require a deposit for certain jobs, including but not limited to: services outside our standard coverage areas, requests for specific tyre brands or sizes that must be specially sourced, jobs requiring advance ordering of parts or materials, and multiple vehicle bookings or large jobs. The deposit amount will be determined on a case-by-case basis and communicated to you at the time of booking. Deposits are typically paid via bank transfer or card payment before we allocate resources to your job.",
-        "4.4 Non-Refundable Deposits - IMPORTANT: Once a deposit has been paid, it is immediately non-refundable, even if you cancel the job. By paying a deposit, you confirm the job and we allocate resources accordingly (technician time, stock procurement, scheduling). This allocation means we cannot accept other jobs during that time slot. The deposit covers our costs and opportunity cost of lost business resulting from resource allocation to your confirmed job.",
+        "4.4 Non-Refundable Deposits and Out of Hours Payment - IMPORTANT: Once a deposit has been paid, it is immediately non-refundable, even if you cancel the job. By paying a deposit, you confirm the job and we allocate resources accordingly (technician time, stock procurement, scheduling). This allocation means we cannot accept other jobs during that time slot. The deposit covers our costs and opportunity cost of lost business resulting from resource allocation to your confirmed job. Out of hours jobs may require payment upfront or a deposit before the technician is dispatched.",
         "4.5 Accepted Payment Methods - We accept the following payment methods: credit and debit cards, cash, and bank transfer (typically for deposits or by prior arrangement). Payment must be made in GBP (British Pounds Sterling).",
         "4.6 VAT - All prices quoted are inclusive of VAT at the applicable rate. A VAT receipt will be provided upon request.",
         
@@ -410,7 +417,7 @@
         "5.3 Puncture Repairs - WE DO NOT CARRY OUT PUNCTURE REPAIRS. Our service model is based on tyre replacement, not repair. If you have a damaged tyre, we will replace it with a new or suitable tyre. We do not patch, plug, or repair punctured tyres.",
         
         "6. YOUR RESPONSIBILITIES",
-        "6.1 Accurate Information - You must provide accurate information about your vehicle (make, model, registration), your location, and the nature of the problem. Inaccurate information may result in delays, inability to complete the work, or additional charges.",
+        "6.1 Accurate Information - You must provide accurate information about your vehicle (make, model, registration), your location, the nature of the problem, and tyre specifications including tyre size and construction (i.e. run-flat/non run-flat). Inaccurate information may result in delays, inability to complete the work, or additional charges.",
         "6.2 Safe Working Environment - You must ensure that the location where work is to be carried out is reasonably safe and accessible for our technicians. For roadside call-outs, you should position your vehicle as safely as possible and use hazard lights and warning triangles where appropriate.",
         "6.3 Vehicle Ownership or Authority - You confirm that you are either the owner of the vehicle or have authority from the owner to instruct us to carry out work. We are not liable for any disputes regarding vehicle ownership or authority to instruct work.",
         "6.4 Vehicle Condition - You are responsible for informing us of any pre-existing damage to your vehicle, particularly wheels, wheel studs, or locking wheel nuts. We are not responsible for pre-existing damage that is discovered during the course of our work.",
@@ -455,6 +462,7 @@
   },
   "google": {
     "rating": "5",
-    "noOfReviews": "414"
+    "noOfReviews": "414",
+    "tagManagerId": "GTM-MC27JVL7"
   }
 }
