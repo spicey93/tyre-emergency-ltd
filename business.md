@@ -52,3 +52,6 @@ https://www.youtube.com/@TyreEmergencyLtd
 
 Business Tone:
 Simple and friendly.
+
+Google tag manager ID
+GTM-MC27JVL7
