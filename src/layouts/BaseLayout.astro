@@ -10,15 +10,7 @@ import CookieConsent from "../components/CookieConsent.astro";
 import { generateLocalBusinessSchema } from "../utils/schema";
 
 const { pageTitle, description } = Astro.props;
-const companyWithNumberCoords = {
-  ...company,
-  address: {
-    ...company.address,
-    latitude: parseFloat(company.address.latitude),
-    longitude: parseFloat(company.address.longitude)
-  }
-};
-const schema = generateLocalBusinessSchema(companyWithNumberCoords, social);
+const schema = generateLocalBusinessSchema(company, social);
 const hasGTM = google?.tagManagerId && google.tagManagerId !== "";
 ---
 

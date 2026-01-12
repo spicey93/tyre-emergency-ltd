@@ -10,8 +10,8 @@ interface Company {
     city: string;
     county?: string;
     postcode: string;
-    latitude: number;
-    longitude: number;
+    latitude: number | string;
+    longitude: number | string;
   };
   openingHours: {
     [key: string]: { opens: string; closes: string };
@@ -42,6 +42,14 @@ export function generateLocalBusinessSchema(company: Company, social: Social) {
     .filter(([_, url]) => url && url !== "#")
     .map(([_, url]) => url);
 
+  // Convert coordinates to numbers if they're strings
+  const latitude = typeof company.address.latitude === 'string' 
+    ? parseFloat(company.address.latitude) 
+    : company.address.latitude;
+  const longitude = typeof company.address.longitude === 'string'
+    ? parseFloat(company.address.longitude)
+    : company.address.longitude;
+
   return {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
@@ -60,8 +68,8 @@ export function generateLocalBusinessSchema(company: Company, social: Social) {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": company.address.latitude,
-        "longitude": company.address.longitude
+        "latitude": latitude,
+        "longitude": longitude
       }
     } : {}),
     "openingHoursSpecification": openingHoursSpec,

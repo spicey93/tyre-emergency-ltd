@@ -1,5 +1,7 @@
 ---
 // src/components/Testimonials.astro
+import { convertStarRating } from "../utils/reviews";
+
 interface Testimonial {
   name: string;
   location: string;
@@ -45,10 +47,7 @@ const transformedReviews: Testimonial[] = customReviews
   .map((review) => ({
     name: review.reviewer.displayName,
     location: "Nottinghamshire", // Default since reviews don't contain location
-    rating: review.starRating === "FIVE" ? 5 : 
-            review.starRating === "FOUR" ? 4 : 
-            review.starRating === "THREE" ? 3 : 
-            review.starRating === "TWO" ? 2 : 1,
+    rating: convertStarRating(review.starRating),
     text: review.comment || ''
   }));
 
@@ -70,7 +69,6 @@ const renderStars = (rating: number) => {
 <section class="testimonials mt-5">
   <div class="container">
     {heading && <h2 class="text-center mb-5">{heading}</h2>}
-    <!-- {subheading && <p class="text-center text-muted mb-5">{subheading}</p>} -->
     
     <div class="row g-4">
       {displayReviews.map((testimonial) => (

@@ -1,5 +1,6 @@
 // src/utils/services.ts
 import type { pages } from "../data/config.json";
+import slug from "./slug";
 
 type ServicePages = typeof pages.services;
 
@@ -21,14 +22,6 @@ export function getProvidedServices(serviceGroups: ServicePages): Service[] {
 export function getNavServices(serviceGroups: ServicePages) {
   return getProvidedServices(serviceGroups).map((s) => ({
     title: s.pageTitle,
-    slug: slugify(s.pageTitle),
+    slug: slug(s.pageTitle),
   }));
-}
-
-function slugify(s: string): string {
-  return String(s)
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, "-")
-    .replace(/[^\w-]/g, "");
 }

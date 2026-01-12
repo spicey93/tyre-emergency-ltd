@@ -2,6 +2,7 @@
 // src/components/Services.astro
 import { pages } from "../data/config.json";
 import { getProvidedServices } from "../utils/services";
+import slug from "../utils/slug";
 
 interface Props {
   heading?: string;
@@ -29,22 +30,17 @@ const serviceIcons: Record<string, string> = {
   "TPMS": "speedometer2"
 };
 
-function slugify(text: string): string {
-  return text.toLowerCase().trim().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
-}
-
 const colClass = `col-lg-${12 / columns}`;
 ---
 
 <section class="services-section bg-light py-5 mt-5">
   <div class="container">
     {heading && <h2 class="text-center mb-5">{heading}</h2>}
-    <!-- {subheading && <p class="text-center text-muted mb-5">{subheading}</p>} -->
     
     <div class="row g-3">
       {services.map((service) => (
         <div class={`${colClass} col-md-6 col-sm-6`}>
-          <a href={`/services/${slugify(service.pageTitle)}`} class="service-card-link">
+          <a href={`/services/${slug(service.pageTitle)}`} class="service-card-link">
             <div class="service-card">
               <div class="service-card-content">
                 <div class="service-icon">
@@ -101,8 +97,6 @@ const colClass = `col-lg-${12 / columns}`;
   }
 
   .service-card:hover {
-    /* transform: translateY(-6px); */
-    /* box-shadow: 0 12px 28px rgba(var(--bs-primary-rgb, 13, 110, 253), 0.18); */
     border-color: var(--bs-primary);
   }
 

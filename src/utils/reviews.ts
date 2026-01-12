@@ -16,6 +16,19 @@ export interface GoogleReview {
 }
 
 /**
+ * Convert star rating from various formats to a number
+ * @param rating - Either a string ('FIVE', 'FOUR', etc.) or a number
+ * @returns Number rating from 1-5
+ */
+export function convertStarRating(rating: string | number): number {
+  if (typeof rating === 'number') return rating;
+  const map: Record<string, number> = {
+    'FIVE': 5, 'FOUR': 4, 'THREE': 3, 'TWO': 2, 'ONE': 1
+  };
+  return map[rating] || 0;
+}
+
+/**
  * Filter reviews by keywords found in the comment text
  * @param reviews - Array of Google reviews
  * @param keywords - Array of keywords to search for (case-insensitive)

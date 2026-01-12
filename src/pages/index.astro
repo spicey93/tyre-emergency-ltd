@@ -4,7 +4,10 @@ import Hero from "../components/Hero.astro";
 import MainContent from "../components/MainContent.astro";
 import Services from "../components/Services.astro"
 import Testimonials from "../components/Testimonials.astro";
-import { pages, marketing } from "../data/config.json";
+import { pages } from "../data/config.json";
+import allReviews from "../data/reviews.json";
+import { getRandomReviews } from "../utils/reviews";
+
 const { home } = pages;
 const {
   pageTitle,
@@ -14,6 +17,9 @@ const {
   mainHeading,
   mainContent,
 } = home;
+
+// Get random reviews from reviews.json for the homepage
+const randomReviews = getRandomReviews(allReviews.reviews, 6);
 ---
 
 <BaseLayout pageTitle={pageTitle} description={description}>
@@ -23,5 +29,5 @@ const {
   />
   <MainContent mainHeading={mainHeading} mainContent={mainContent} />
   <Services />
-  <Testimonials testimonials={marketing.testimonials} />
+  <Testimonials customReviews={randomReviews} />
 </BaseLayout>
