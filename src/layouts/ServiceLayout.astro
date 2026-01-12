@@ -4,6 +4,9 @@ import Hero from "../components/Hero.astro";
 import MainContent from "../components/MainContent.astro";
 import Testimonials from "../components/Testimonials.astro";
 import { marketing } from "../data/config.json";
+import allReviews from "../data/reviews.json";
+import { filterReviewsForService } from "../utils/reviews";
+
 const {
   pageTitle,
   description,
@@ -12,10 +15,13 @@ const {
   mainHeading,
   mainContent = [],
 } = Astro.props;
+
+// Filter reviews based on service name
+const relevantReviews = filterReviewsForService(allReviews.reviews, pageTitle, 6);
 ---
 
 <BaseLayout pageTitle={pageTitle} description={description}>
   <Hero heading={heroHeading} subheading={heroSubheading} />
   <MainContent mainHeading={mainHeading} mainContent={mainContent} />
-  <Testimonials testimonials={marketing.testimonials} />
+  <Testimonials customReviews={relevantReviews} />
 </BaseLayout>

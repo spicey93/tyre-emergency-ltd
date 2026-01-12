@@ -167,7 +167,7 @@
     "services": [
       {
         "mobileTyreFitting": {
-          "isProvided": false,
+          "isProvided": true,
           "pageTitle": "Mobile Tyre Fitting",
           "description": "We bring the garage to you! Expert mobile tyre fitting at your home, workplace, or roadside. No queues, no waiting - just great service at your convenience.",
           "heroHeading": "Mobile Tyre Fitting",

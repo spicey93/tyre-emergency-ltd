@@ -7,17 +7,58 @@ interface Testimonial {
   text: string;
 }
 
+// Google Review format from reviews.json
+interface GoogleReview {
+  reviewer: {
+    displayName: string;
+  };
+  starRating: string;
+  comment?: string;
+  createTime?: string;
+  updateTime?: string;
+  reviewReply?: {
+    comment: string;
+    updateTime: string;
+  };
+  name?: string;
+}
+
 interface Props {
-  testimonials: Testimonial[];
+  testimonials?: Testimonial[];
+  customReviews?: GoogleReview[];
   heading?: string;
   subheading?: string;
+  limit?: number;
 }
 
 const { 
-  testimonials, 
+  testimonials = [], 
+  customReviews = [],
   heading = "What Our Customers Say",
-  subheading = "Don't just take our word for it"
+  subheading = "Don't just take our word for it",
+  limit
 } = Astro.props;
+
+// Transform Google reviews to Testimonial format (filter out reviews without comments)
+const transformedReviews: Testimonial[] = customReviews
+  .filter(review => review.comment && review.comment.trim().length > 0)
+  .map((review) => ({
+    name: review.reviewer.displayName,
+    location: "Nottinghamshire", // Default since reviews don't contain location
+    rating: review.starRating === "FIVE" ? 5 : 
+            review.starRating === "FOUR" ? 4 : 
+            review.starRating === "THREE" ? 3 : 
+            review.starRating === "TWO" ? 2 : 1,
+    text: review.comment || ''
+  }));
+
+// Use custom reviews if provided, otherwise use testimonials
+let displayReviews = transformedReviews.length > 0 ? transformedReviews : testimonials;
+
+// Apply limit if specified
+if (limit && limit > 0) {
+  displayReviews = displayReviews.slice(0, limit);
+}
 
 // Function to render star rating
 const renderStars = (rating: number) => {
@@ -32,7 +73,7 @@ const renderStars = (rating: number) => {
     <!-- {subheading && <p class="text-center text-muted mb-5">{subheading}</p>} -->
     
     <div class="row g-4">
-      {testimonials.map((testimonial) => (
+      {displayReviews.map((testimonial) => (
         <div class="col-lg-4 col-md-6">
           <div class="testimonial-card h-100 p-4 border rounded shadow-sm bg-white">
             <div class="d-flex align-items-center mb-3">
