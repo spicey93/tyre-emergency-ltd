@@ -18,10 +18,20 @@ const {
 
 // Filter reviews based on service name
 const relevantReviews = filterReviewsForService(allReviews.reviews, pageTitle, 6);
+
+// Map service titles to background images
+const serviceImageMap: Record<string, string> = {
+  "Mobile Tyre Fitting": "/src/images/business/mobile-tyre-fitting.webp",
+  "Emergency Mobile Tyre Fitting": "/src/images/business/emergency-mobile-tyre-fitting.webp",
+  "Locking Wheel Nut Removal": "/src/images/business/locking-wheel-nut-removal.webp",
+  "TPMS Service": "/src/images/business/tpms.jpeg",
+};
+
+const backgroundImage = serviceImageMap[pageTitle] || "/src/images/hero.jpg";
 ---
 
 <BaseLayout pageTitle={pageTitle} description={description}>
-  <Hero heading={heroHeading} subheading={heroSubheading} />
+  <Hero heading={heroHeading} subheading={heroSubheading} backgroundImage={backgroundImage} />
   <MainContent mainHeading={mainHeading} mainContent={mainContent} />
   <Testimonials customReviews={relevantReviews} />
 </BaseLayout>
