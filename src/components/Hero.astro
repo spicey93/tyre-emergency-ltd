@@ -11,10 +11,10 @@ const {
   <div class="container text-light">
     <div class="row">
       <div class="col-lg-6">
-        <p class="display-3 fw-bold">
+        <p class="display-5 fw-bold">
           {heading}
         </p>
-        <p class="lead mb-4">
+        <p class="mb-4">
           {subheading}
         </p>
         <div class="d-grid d-lg-block">
@@ -32,6 +32,23 @@ const {
     min-height: 70vh;
     background-image: url("../images/hero.jpg");
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+    background-position: center;
+    position: relative;
+  }
+  
+  #hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  #hero .container {
+    position: relative;
+    z-index: 2;
   }
 </style>
